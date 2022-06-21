@@ -1,7 +1,7 @@
 # Resume - 職務経歴書
 
 ## Basic Infomation - 基本情報
-|    |    |
+|  Key |  Value |
 | ---- | ---- |
 |  Name  |  Utano Harada（原田詩乃）  |
 |  language  |  Japanese, English  |
