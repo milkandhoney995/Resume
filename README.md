@@ -28,13 +28,15 @@
 - Figma(個人開発)
 
 ### Second Language
-- English: no problem in reading, writing, listening, and speaking
-- French: totally newbie. able to read and write, but hard to listen and speak
+- English: 流暢ではありませんが、英語のコミュニケーションに抵抗はありません。相手の言うこともよく理解できます。
+  - 実用英語技能検定準1級
+  - TOEIC755点
+- French: 読み書き程度
 
 ## 2. Value - 価値観
 ### Requirement - 会社に求めるもの
 - オープンでボトムアップな環境で働ける
-- Opportunity to collaborate with coworkers outside Japan 日常的に日本人以外の人と働く機会
+- 日常的に日本人以外の人と働く機会
 - 新しい技術を学べる
 
 ### What I want to do - やりたいこと
