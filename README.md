@@ -13,6 +13,7 @@
 ### Programming Language
 - HTML/CSS
 - JavaScript
+- TypeScript(個人開発)
 
 ### Framework and tool
 - Vue.js
@@ -86,6 +87,14 @@
 
 ## 4. プライベート開発
 [ヘルスコーチ活動用サイト](https://uta-healthcoachandweb.vercel.app/holistichealthcoach)
+
+#### 言語, ツール
+- HTML/CSS(Sass)
+- React.js
+- TypeScript
+- microCMS
+- Vercel
+- Adobe XD
 
 ## 5. 自己PR
 - 意見をはっきり伝える
