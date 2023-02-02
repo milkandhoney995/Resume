@@ -1,6 +1,6 @@
 # Resume - 職務経歴書
 
-## Basic Infomation - 基本情報
+## Basic Infomation
 |   |   |
 | ---- | ---- |
 |  Name  |  Utano Harada（原田詩乃）  |
@@ -9,7 +9,7 @@
 |  LinkedIn  |  [Utano Harada](https://www.linkedin.com/in/utano-harada-16b427214/)  |
 ***
 
-## 1.Skills - スキル
+## 1.Skills
 ### Programming Language
 - HTML/CSS
 - JavaScript
@@ -28,23 +28,24 @@
 - Figma(個人開発)
 
 ### Second Language
-- English: 流暢ではありませんが、英語のコミュニケーションに抵抗はありません。相手の言うこともよく理解できます。
-  - 実用英語技能検定準1級
-  - TOEIC755点
-- French: 読み書き程度
+- English:I'm not hesitated to communicate in English. 
+  - 英語のコミュニケーションに抵抗はありません。相手の言うこともよく理解できます。
+  - I passed the test for Eiken Grade pre-1. 実用英語技能検定準1級取得
+  - TOEIC Score 755
+- French: I can read and write French sentences. 読み書き程度
 
-## 2. Value - 価値観
-### Requirement - 会社に求めるもの
-- オープンでボトムアップな環境で働ける
-- 日常的に日本人以外の人と働く機会
-- 新しい技術を学べる
+## 2. My Value
+### My Core Value
+- Collaborate with like-minded people who prioritize their own well-being
+- Utilize my Front-end knowledges (JavaScript, HTML/CSS)
+- Learning Python
 
-### What I want to do - やりたいこと
-- プロダクトをよりよくしていく
-- 技術を学び続ける
+### What I want to do
+- To become a healthy engineer
+- To working as a Front-end eigineer with Vue.js or React.js
 
 ## 3. Work Experience - 職務経歴
-### 株式会社ＣＲＩ・ミドルウェア（2021/04〜現在）
+### CRI Middleware Co., Ltd / 株式会社ＣＲＩ・ミドルウェア（2021/04〜現在）
 
 #### ゲーム開発技術者向けイベントサイトの制作
 ゲーム開発技術者向けイベントサイトの制作で、開発を担当しました。
@@ -89,7 +90,7 @@
   - Nuxt.jsでのフロントエンド開発
   - テスト
 
-## 4. プライベート開発
+## 4. Day-off Coding / プライベート開発
 [ヘルスコーチ活動用サイト](https://uta-healthcoachandweb.vercel.app/holistichealthcoach)
 
 #### 言語, ツール
@@ -100,11 +101,9 @@
 - Vercel
 - Adobe XD
 
-## 5. 自己PR
+## 5. About Myself / 私について
 - 意見をはっきり伝える
-  - メンバーとコミュニケーションを取る際には、自身の意見をはっきりと主張します。
+  - メンバーとコミュニケーションを取る際には、自身の意見をはっきり主張します。
 - 傾聴力
   - 例え自分と意見が違う相手であったとしても、その違いを尊重して議論することができます。
-- 学習意欲
-  - 仕事は自分を成長させるものとして捉え、チャレンジすることを楽しめます。また、プライベートでも、業務で得た技術のアウトプットを積極的に行い、自己啓発に努めています。
 
