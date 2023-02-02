@@ -41,11 +41,11 @@
 - Learning Python
 
 ### What I want to do
-- To become a healthy engineer
-- To working as a Front-end eigineer with Vue.js or React.js
+- Become a healthy engineer
+- Develop Vue.js, React.js, or other Front-end knowledge
 
 ## 3. Work Experience - 職務経歴
-### CRI Middleware Co., Ltd / 株式会社ＣＲＩ・ミドルウェア（2021/04〜現在）
+### CRI Middleware Co., Ltd （2021/04〜） / 株式会社ＣＲＩ・ミドルウェア（2021/04〜）
 
 #### ゲーム開発技術者向けイベントサイトの制作
 ゲーム開発技術者向けイベントサイトの制作で、開発を担当しました。
