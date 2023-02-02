@@ -39,12 +39,13 @@
 - Collaborate with like-minded people who prioritize their own well-being
 - Utilize my Front-end knowledges (JavaScript, HTML/CSS)
 - Learning Python
+- Clarify my stance in every discussion, and try to respect/understand any opposite opinion.
 
 ### What I want to do
 - Become a healthy engineer
 - Develop Vue.js, React.js, or other Front-end knowledge
 
-## 3. Work Experience - 職務経歴
+## 3. Work Experience
 ### CRI Middleware Co., Ltd （2021/04〜） / 株式会社ＣＲＩ・ミドルウェア（2021/04〜）
 
 #### ゲーム開発技術者向けイベントサイトの制作
@@ -90,7 +91,7 @@
   - Nuxt.jsでのフロントエンド開発
   - テスト
 
-## 4. Day-off Coding / プライベート開発
+## 4. Day-off Coding
 [ヘルスコーチ活動用サイト](https://uta-healthcoachandweb.vercel.app/holistichealthcoach)
 
 #### 言語, ツール
@@ -100,10 +101,4 @@
 - microCMS
 - Vercel
 - Adobe XD
-
-## 5. About Myself / 私について
-- 意見をはっきり伝える
-  - メンバーとコミュニケーションを取る際には、自身の意見をはっきり主張します。
-- 傾聴力
-  - 例え自分と意見が違う相手であったとしても、その違いを尊重して議論することができます。
 
