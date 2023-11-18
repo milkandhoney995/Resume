@@ -46,7 +46,10 @@
 - Develop Vue.js, React.js, or other Front-end knowledge
 
 ## 3. Work Experience
-### CRI Middleware Co., Ltd （2021/04〜） / 株式会社ＣＲＩ・ミドルウェア（2021/04〜）
+### Fujisoft Co., Ltd （2023/04〜） / 富士ソフト株式会社（2023/04〜）
+#### 都内自治体向け児童Saasサービス受託開発
+
+### CRI Middleware Co., Ltd （2021/04〜2023/03） / 株式会社ＣＲＩ・ミドルウェア（2021/04〜2023/03）
 
 #### ゲーム開発技術者向けイベントサイトの制作
 ゲーム開発技術者向けイベントサイトの制作で、開発を担当しました。
