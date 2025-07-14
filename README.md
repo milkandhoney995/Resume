@@ -79,8 +79,8 @@ A frontend developer with 3+ years of experience in building web applications us
 ### [💌 Web Invitation App](https://web-invitation-orpin.vercel.app/)  
 An interactive invitation builder made with Next.js, TypeScript, and Render.
 
-**Stack**: React, TypeScript, Sass, microCMS, Vercel, Adobe XD  
-**Highlights**: Responsive UI, form integration, CMS-driven content
+**Stack**: Next.js, TypeScript, Zod, Render, Vercel, Figma  
+**Highlights**: Responsive UI, form integration, validation
 
 ---
 
