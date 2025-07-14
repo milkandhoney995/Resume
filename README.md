@@ -1,108 +1,110 @@
-# Resume
+# Utano Harada — Frontend Developer
 
-## Basic Information
-
-|   |   |
-| ---- | ---- |
-| Name | Utano Harada |
-| Languages | Japanese, English |
-| LinkedIn | [Utano Harada](https://www.linkedin.com/in/utano-harada-16b427214/) |
+A frontend developer with 3+ years of experience in building web applications using modern JavaScript frameworks. Skilled in both Vue.js/Nuxt.js and React/Next.js environments. Comfortable working in diverse teams and capable of reading and writing technical English documentation. Passionate about creating clean, user-friendly interfaces and contributing to a collaborative team culture.
 
 ---
 
-## 1. Skills
+## 🌍 Contact
 
-### Programming Languages
-- HTML/CSS
-- JavaScript
-- TypeScript (personal projects)
+- **Website**: [uta-healthcoachandweb.vercel.app](https://uta-healthcoachandweb.vercel.app/holistichealthcoach)  
+- **LinkedIn**: [Utano Harada](https://www.linkedin.com/in/utano-harada-16b427214/)  
+- **Languages**: Japanese (Native), English (Intermediate), French (Basic Reading/Writing)  
 
-### Frameworks and Tools
-- Vue.js
-- Nuxt.js
-- React.js (personal and professional)
-- jQuery (personal projects)
-- AWS
-- Vercel (personal projects)
-- WordPress (personal projects)
-- microCMS (personal projects)
-- Adobe XD
-- Figma (personal projects)
+---
+
+## 🛠️ Technical Skills
 
 ### Languages
-- **English**: Comfortable with communication and reading technical documents.
-  - Passed Eiken Grade Pre-1
-  - TOEIC Score: 755
-- **Danish**: Learning
-
----
-
-## 2. Values
-
-### Core Values
-- Collaborate with people who prioritize well-being
-- Apply frontend knowledge (JavaScript, HTML/CSS) to real-world projects
-- Learning Python
-- Communicate with clarity and respect different perspectives
-
-### Career Goals
-- Be a healthy and sustainable software engineer
-- Develop expertise in Vue.js, React.js, and other frontend technologies
-
----
-
-## 3. Work Experience
-
-### **SCSK Minori Solutions, Inc.** (April 2024 – Present)
-#### Frontend Engineer
-
-- Working on frontend development using **React Hook Form** for enterprise web applications.
-- Collaborating in a team environment to ensure accessibility, maintainability, and performance.
-
----
-
-### **Fujisoft Inc.** (April 2023 – March 2024)
-#### Frontend Engineer
-
-- Contracted development of a SaaS service for child welfare systems for a Tokyo-based municipality.
-- Mainly used **Vue.js** and **Nuxt.js**.
-- Responsible for implementing frontend features and collaborating within a team structure.
-
----
-
-### **CRI Middleware Co., Ltd.** (April 2021 – March 2023)
-#### Frontend Engineer
-
-##### Event Website for Game Developers
-- Built an event website for game developers in a team of 8 using waterfall development.
-- Worked with Laravel and collaborated with 4 engineers from a subsidiary.
-
-##### Developer Portal for Voice Chat API
-- Created a new internal developer portal for a voice chat API.
-- Involved in requirement analysis, design, and frontend implementation using Laravel.
-- Collaborated with members from other departments.
-
-##### UI Component Library for In-House Products
-- Led frontend development and technology selection for a UI component library using Vue.js.
-- Responsible for design (with Cacoo), implementation, and testing.
-- Worked in a team of 3.
-
-##### Online Expo Platform
-- Developed additional features for an existing online exhibition platform.
-- Used **Nuxt.js** for frontend development.
-- Participated in testing and frontend maintenance within an 8-person team.
-
----
-
-## 4. Personal Projects
-
-### [Web Invitation App](https://web-invitation-orpin.vercel.app/)
-A personal project for creating stylish web-based invitations.
-
-#### Tools and Technologies:
-- HTML/CSS (Sass)
-- React.js
+- JavaScript
 - TypeScript
-- microCMS
-- Vercel
-- Adobe XD
+- HTML/CSS (Sass)
+
+### Frameworks & Libraries
+- React.js / Next.js
+- Vue.js / Nuxt.js
+- React Hook Form
+- jQuery (basic/personal use)
+
+### Tools & Platforms
+- Git, GitHub
+- Figma, Adobe XD, Cacoo
+- Vercel, AWS (basic)
+- WordPress, microCMS
+
+---
+
+## 💼 Work Experience
+
+### **Frontend Engineer — SCSK Minori Solutions, Inc.**  
+*Tokyo, Japan | Apr 2024 – Present*
+
+- Developed internal business applications using **React + React Hook Form**.
+- Collaborated with team members to deliver accessible and performant UI components.
+- Maintained code quality and documentation for reusability across projects.
+
+---
+
+### **Frontend Developer — Fujisoft Inc.**  
+*Tokyo, Japan | Apr 2023 – Mar 2024*
+
+- Contributed to a **SaaS product for child welfare services** for a municipal government.
+- Built responsive frontend features using **Nuxt.js**.
+- Participated in feature planning, code reviews, and UI implementation in a mid-size team.
+
+---
+
+### **Frontend Developer — CRI Middleware Co., Ltd.**  
+*Tokyo, Japan | Apr 2021 – Mar 2023*
+
+#### 🟢 Developer Portal for Voice Chat API  
+- Led the frontend implementation of an internal portal from scratch using **Laravel and Vue.js**.
+- Involved in system design, planning, and cross-department collaboration.
+
+#### 🟢 UI Component Library (In-house Use)  
+- Designed and built a reusable **UI library in Vue.js**, including testing and documentation.
+- Conducted UI design using **Cacoo**, and set frontend architecture.
+
+#### 🟢 Event Website for Game Developers  
+- Upgraded and maintained a Laravel-based website for technical events.
+- Worked in a team of 8 developers, coordinating with a subsidiary.
+
+#### 🟢 Online Expo Platform  
+- Added new frontend features to a **Nuxt.js** application for online exhibitions.
+- Participated in testing and deployment processes.
+
+---
+
+## 🧪 Personal Projects
+
+### [💌 Web Invitation App](https://web-invitation-orpin.vercel.app/)  
+An interactive invitation builder made with Next.js, TypeScript, and Render.
+
+**Stack**: React, TypeScript, Sass, microCMS, Vercel, Adobe XD  
+**Highlights**: Responsive UI, form integration, CMS-driven content
+
+---
+
+## 🎓 Education & Certifications
+
+- **TOEIC**: 755
+- **EIKEN (English Proficiency Test in Japan)**: Pre-1st Grade
+- Continuing to study **Business English** and **Python** in personal time.
+
+---
+
+## ✅ Strengths
+
+- ✅ Strong foundation in both **Vue/Nuxt** and **React/Next** ecosystems
+- ✅ Capable of working with international teams (English documentation & communication)
+- ✅ Open-minded, respectful team player
+- ✅ Curious and continually learning (e.g. Python, modern UI practices)
+
+---
+
+## 💬 Language Proficiency
+
+| Language | Level | Notes |
+|----------|-------|-------|
+| Japanese | Native | - |
+| English | Intermediate | Comfortable in reading/writing. Practicing spoken fluency. |
+| French  | Basic | Can read and write simple sentences. |
