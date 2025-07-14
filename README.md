@@ -6,7 +6,6 @@
 | ---- | ---- |
 | Name | Utano Harada |
 | Languages | Japanese, English |
-| Blog | [uta-healthcoachandweb.vercel.app](https://uta-healthcoachandweb.vercel.app/holistichealthcoach) |
 | LinkedIn | [Utano Harada](https://www.linkedin.com/in/utano-harada-16b427214/) |
 
 ---
@@ -34,7 +33,7 @@
 - **English**: Comfortable with communication and reading technical documents.
   - Passed Eiken Grade Pre-1
   - TOEIC Score: 755
-- **French**: Can read and write basic French.
+- **Danish**: Learning
 
 ---
 
