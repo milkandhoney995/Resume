@@ -1,107 +1,109 @@
 # Resume
 
-## Basic Infomation
+## Basic Information
+
 |   |   |
 | ---- | ---- |
-|  Name  |  Utano Harada（原田詩乃）  |
-|  language  |  Japanese, English  |
-|  Blog  |  [uta-healthcoachandweb.vercel.app](https://uta-healthcoachandweb.vercel.app/holistichealthcoach)  |
-|  LinkedIn  |  [Utano Harada](https://www.linkedin.com/in/utano-harada-16b427214/)  |
-***
+| Name | Utano Harada |
+| Languages | Japanese, English |
+| Blog | [uta-healthcoachandweb.vercel.app](https://uta-healthcoachandweb.vercel.app/holistichealthcoach) |
+| LinkedIn | [Utano Harada](https://www.linkedin.com/in/utano-harada-16b427214/) |
 
-## 1.Skills
-### Programming Language
+---
+
+## 1. Skills
+
+### Programming Languages
 - HTML/CSS
 - JavaScript
-- TypeScript(個人開発)
+- TypeScript (personal projects)
 
-### Framework and tool
+### Frameworks and Tools
 - Vue.js
 - Nuxt.js
-- React.js(個人開発)
-- jQuery(個人開発)
+- React.js (personal and professional)
+- jQuery (personal projects)
 - AWS
-- Vercel（個人開発）
-- WordPress（個人開発）
-- microCMS(個人開発)
+- Vercel (personal projects)
+- WordPress (personal projects)
+- microCMS (personal projects)
 - Adobe XD
-- Figma(個人開発)
+- Figma (personal projects)
 
-### Second Language
-- English:I'm not hesitated to communicate in English. 
-  - 英語のコミュニケーションに抵抗はありません。相手の言うこともよく理解できます。
-  - I passed the test for Eiken Grade pre-1. 実用英語技能検定準1級取得
-  - TOEIC Score 755
-- French: I can read and write French sentences. 読み書き程度
+### Languages
+- **English**: Comfortable with communication and reading technical documents.
+  - Passed Eiken Grade Pre-1
+  - TOEIC Score: 755
+- **French**: Can read and write basic French.
 
-## 2. My Value
-### My Core Value
-- Collaborate with like-minded people who prioritize their own well-being
-- Utilize my Front-end knowledges (JavaScript, HTML/CSS)
+---
+
+## 2. Values
+
+### Core Values
+- Collaborate with people who prioritize well-being
+- Apply frontend knowledge (JavaScript, HTML/CSS) to real-world projects
 - Learning Python
-- Clarify my stance in every discussion, and try to respect/understand any opposite opinion.
+- Communicate with clarity and respect different perspectives
 
-### What I want to do
-- Become a healthy engineer
-- Develop Vue.js, React.js, or other Front-end knowledge
+### Career Goals
+- Be a healthy and sustainable software engineer
+- Develop expertise in Vue.js, React.js, and other frontend technologies
+
+---
 
 ## 3. Work Experience
-### Fujisoft Co., Ltd （2023/04〜） / 富士ソフト株式会社（2023/04〜）
-#### 都内自治体向け児童Saasサービス受託開発
 
-### CRI Middleware Co., Ltd （2021/04〜2023/03） / 株式会社ＣＲＩ・ミドルウェア（2021/04〜2023/03）
+### **SCSK Minori Solutions, Inc.** (April 2024 – Present)
+#### Frontend Engineer
 
-#### ゲーム開発技術者向けイベントサイトの制作
-ゲーム開発技術者向けイベントサイトの制作で、開発を担当しました。
+- Working on frontend development using **React Hook Form** for enterprise web applications.
+- Collaborating in a team environment to ensure accessibility, maintainability, and performance.
 
-- 規模：8人チームでのウォーターフォール開発
+---
 
-- 担当：開発
+### **Fujisoft Inc.** (April 2023 – March 2024)
+#### Frontend Engineer
 
-- 詳細
-  - Laravelでの既存webサイトのブラッシュアップ
-  - 子会社（計4名）のメンバーとの開発
+- Contracted development of a SaaS service for child welfare systems for a Tokyo-based municipality.
+- Mainly used **Vue.js** and **Nuxt.js**.
+- Responsible for implementing frontend features and collaborating within a team structure.
 
-#### ボイスチャット開発者ポータルの新規立ち上げ
-社内ボイスチャット開発者向けポータルの新規開発で、機能検討から運用まで担当しました。
+---
 
-- 規模：7人チームでのウォーターフォール開発
+### **CRI Middleware Co., Ltd.** (April 2021 – March 2023)
+#### Frontend Engineer
 
-- 担当：機能検討、設計、開発
+##### Event Website for Game Developers
+- Built an event website for game developers in a team of 8 using waterfall development.
+- Worked with Laravel and collaborated with 4 engineers from a subsidiary.
 
-- 詳細
-  - Laravelでの新規アプリケーション開発
-  - 他部署（計3名）のメンバーとの開発
+##### Developer Portal for Voice Chat API
+- Created a new internal developer portal for a voice chat API.
+- Involved in requirement analysis, design, and frontend implementation using Laravel.
+- Collaborated with members from other departments.
 
-#### 自社製品向けUIライブラリの開発
-自社製品向けUIライブラリの開発で、技術選定から運用まで全て担当しました。
+##### UI Component Library for In-House Products
+- Led frontend development and technology selection for a UI component library using Vue.js.
+- Responsible for design (with Cacoo), implementation, and testing.
+- Worked in a team of 3.
 
-- 規模：3人でのウォーターフォール開発
+##### Online Expo Platform
+- Developed additional features for an existing online exhibition platform.
+- Used **Nuxt.js** for frontend development.
+- Participated in testing and frontend maintenance within an 8-person team.
 
-- 担当：フロントエンドの技術選定、機能検討、設計、開発、テスト
+---
 
-- 詳細
-  - Vue.jsの新規ライブラリ開発
-  - CacooでのUI設計
-  - テスト
+## 4. Personal Projects
 
-#### オンライン展示会プラットフォームの開発
-オンライン展示会プラットフォームの機能追加を担当しました。
+### [Web Invitation App](https://web-invitation-orpin.vercel.app/)
+A personal project for creating stylish web-based invitations.
 
-- 規模：8人チームでのウォーターフォール開発
-- 役割：フロントエンドの開発
-- 詳細
-  - Nuxt.jsでのフロントエンド開発
-  - テスト
-
-## 4. Day-off Coding
-[ヘルスコーチ活動用サイト](https://uta-healthcoachandweb.vercel.app/holistichealthcoach)
-
-#### 言語, ツール
-- HTML/CSS(Sass)
+#### Tools and Technologies:
+- HTML/CSS (Sass)
 - React.js
 - TypeScript
 - microCMS
 - Vercel
 - Adobe XD
-
