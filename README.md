@@ -6,7 +6,7 @@ A frontend developer with 3+ years of experience in building web applications us
 
 ## 🌍 Contact
 
-- **Website**: [uta-healthcoachandweb.vercel.app](https://uta-healthcoachandweb.vercel.app/holistichealthcoach)  
+- **Website**: [uta-healthcoachandweb.vercel.app](https://uta-healthcoachandweb.vercel.app/webdeveloper)  
 - **LinkedIn**: [Utano Harada](https://www.linkedin.com/in/utano-harada-16b427214/)  
 - **Languages**: Japanese (Native), English (Intermediate), French (Basic Reading/Writing)  
 
