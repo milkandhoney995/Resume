@@ -1,6 +1,6 @@
 # Utano Harada — Frontend Developer
 
-A frontend developer with 3+ years of experience in building web applications using modern JavaScript frameworks. Skilled in both Vue.js/Nuxt.js and React/Next.js environments. Comfortable working in diverse teams and capable of reading and writing technical English documentation. Passionate about creating clean, user-friendly interfaces and contributing to a collaborative team culture.
+A frontend developer with 4+ years of experience in building web applications using modern JavaScript frameworks. Skilled in both Vue.js/Nuxt.js and React/Next.js environments. Comfortable working in diverse teams and capable of reading and writing technical English documentation. Passionate about creating clean, user-friendly interfaces and contributing to a collaborative team culture.
 
 ---
 
