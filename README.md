@@ -1,26 +1,19 @@
-# Utano Harada — Frontend Developer
-
-A frontend developer with 4+ years of experience in building web applications using modern JavaScript frameworks. Skilled in both Vue.js/Nuxt.js and React/Next.js environments. Comfortable working in diverse teams and capable of reading and writing technical English documentation. Passionate about creating clean, user-friendly interfaces and contributing to a collaborative team culture.
+# Utano Kurihara — Frontend Developer
+## Bio
+A frontend developer with 5 years of experience in building web applications using modern JavaScript frameworks. Skilled in both Vue.js/Nuxt.js and React/Next.js environments. Comfortable working in diverse teams and capable of reading and writing technical English documentation. Passionate about creating clean, user-friendly interfaces and contributing to a collaborative team culture.
 
 ---
 
-## 🛠️ Technical Skills
+## 🛠️ Skills
 
-### Languages
-- JavaScript
-- TypeScript
-- HTML/CSS (Sass)
-
-### Frameworks & Libraries
-- React.js / Next.js
-- Vue.js / Nuxt.js
-- React Hook Form
-- jQuery (basic/personal use)
+### Languages, Frameworks & Libraries
+- Proficiency in JavaScript, TypeScript, React.js/Next.js, Vue.js/Nuxt.js
+- Proficiency in React Hook Form
 
 ### Tools & Platforms
 - Git, GitHub
-- Figma, Adobe XD, Cacoo
-- Vercel, AWS (basic)
+- Figma, Adobe XD
+- Vercel, AWS
 - WordPress, microCMS
 
 ---
@@ -28,7 +21,7 @@ A frontend developer with 4+ years of experience in building web applications us
 ## 💼 Work Experience
 
 ### **Frontend Engineer — SCSK Minori Solutions, Inc.**  
-*Tokyo, Japan | Apr 2024 – Present*
+*Tokyo, Japan | Apr 2024 – Sept 2025*
 
 - Developed internal business applications using **React + React Hook Form**.
 - Collaborated with team members to deliver accessible and performant UI components.
@@ -77,7 +70,13 @@ An interactive invitation builder made with Next.js, TypeScript, and Render.
 
 ---
 
-## 🎓 Education & Certifications
+## 🎓 Education
+
+College of Liberal Arts 
+International Christian University
+2021
+
+## Certifications
 
 - **TOEIC**: 755
 - **EIKEN (English Proficiency Test in Japan)**: Pre-1st Grade
