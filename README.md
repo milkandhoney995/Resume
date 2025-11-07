@@ -6,15 +6,27 @@ A frontend developer with 5 years of experience in building web applications usi
 
 ## 🛠️ Skills
 
-### Languages, Frameworks & Libraries
-- Proficiency in JavaScript, TypeScript, React.js/Next.js, Vue.js/Nuxt.js
-- Proficiency in React Hook Form
+✅ Proficiency in both **Vue/Nuxt** and **React/Next** ecosystems<br />
+✅ Proficiency in JavaScript, TypeScript<br />
+✅ Web design<br />
+✅ Capable of working with international teams (English documentation & communication)<br />
+✅ Open-minded, respectful team player<br />
+✅ Curious and continually learning
 
 ### Tools & Platforms
 - Git, GitHub
 - Figma, Adobe XD
 - Vercel, AWS
 - WordPress, microCMS
+
+### 💬 Language Proficiency
+
+| Language | Level | Notes |
+|----------|-------|-------|
+| Japanese | Native | - |
+| English | Intermediate | Comfortable in reading/writing. Practicing spoken fluency. |
+| Danish  | Basic | Can read and write simple sentences. |
+| French  | Basic | Can read and write simple sentences. |
 
 ---
 
@@ -80,23 +92,4 @@ International Christian University
 
 - **TOEIC**: 755
 - **EIKEN (English Proficiency Test in Japan)**: Pre-1st Grade
-- Continuing to study **Business English** and **Python** in personal time.
-
----
-
-## ✅ Strengths
-
-- ✅ Strong foundation in both **Vue/Nuxt** and **React/Next** ecosystems
-- ✅ Capable of working with international teams (English documentation & communication)
-- ✅ Open-minded, respectful team player
-- ✅ Curious and continually learning (e.g. Python, modern UI practices)
-
----
-
-## 💬 Language Proficiency
-
-| Language | Level | Notes |
-|----------|-------|-------|
-| Japanese | Native | - |
-| English | Intermediate | Comfortable in reading/writing. Practicing spoken fluency. |
-| French  | Basic | Can read and write simple sentences. |
+- IELTS Academic 6.0
