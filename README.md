@@ -84,8 +84,8 @@ An interactive invitation builder made with Next.js, TypeScript, and Render.
 
 ## 🎓 Education
 
-College of Liberal Arts 
-International Christian University
+College of Liberal Arts<br />
+International Christian University<br />
 2021
 
 ## Certifications
