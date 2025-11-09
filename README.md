@@ -35,8 +35,10 @@ A frontend developer with 5 years of experience in building web applications usi
 ### **Frontend Engineer — SCSK Minori Solutions, Inc.**  
 *Tokyo, Japan | Apr 2024 – Sept 2025*
 
-#### Development of Single-Sign-On application for Epson products
-- Frontend development with **React + React Hook Form**
+#### Development of multilingual SSO application for Epson products
+- Frontend development with **Next.js, Redux, React Hook Form, TypeScript**
+- multilingualization with **i18next**
+- SSO(Single Sign On) function created with **Auth0**
 - Collaborated with team members to deliver accessible and performant UI components.
 - Maintained code quality and documentation for reusability across projects.
 
@@ -46,7 +48,7 @@ A frontend developer with 5 years of experience in building web applications usi
 *Tokyo, Japan | Apr 2023 – Mar 2024*
 
 #### Development of child welfare services for Shinagawa Ward
-- Built responsive frontend features using **Nuxt.js**
+- Built responsive mockups with **Nuxt.js, JavaScript**
 - Participated in feature planning, code reviews, and UI implementation in a mid-size team
 
 ---
@@ -55,19 +57,22 @@ A frontend developer with 5 years of experience in building web applications usi
 *Tokyo, Japan | Apr 2021 – Mar 2023*
 
 #### 🟢 Developer Portal for Voice Chat API  
-- Led the frontend implementation of an internal portal from scratch using **Laravel and Vue.js**.
-- Involved in system design, planning, and cross-department collaboration.
+- Implementation of an internal portal with **Laravel and Nuxt.js**.
+- Collaboration with web designer
 
 #### 🟢 UI Component Library (In-house Use)  
-- Designed and built a reusable **UI library in Vue.js**, including testing and documentation.
-- Conducted UI design using **Cacoo**, and set frontend architecture.
+- Designed and built a reusable **UI library in Vue.js**
+- testing
+- documentation
+- UI design with web designer
 
 #### 🟢 Event Website for Game Developers  
 - Upgraded and maintained a Laravel-based website for technical events.
 - Worked in a team of 8 developers, coordinating with a subsidiary.
 
-#### 🟢 Online Expo Platform  
-- Added new frontend features to a **Nuxt.js** application for online exhibitions.
+#### 🟢 Online Exposition Platform  
+- Implementation of online exposition platform with  **Nuxt.js**
+- Implemented Log-in function
 - Participated in testing and deployment processes.
 
 ---
