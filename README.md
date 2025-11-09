@@ -35,7 +35,8 @@ A frontend developer with 5 years of experience in building web applications usi
 ### **Frontend Engineer — SCSK Minori Solutions, Inc.**  
 *Tokyo, Japan | Apr 2024 – Sept 2025*
 
-- Developed internal business applications using **React + React Hook Form**.
+#### Development of Single-Sign-On application for Epson products
+- Frontend development with **React + React Hook Form**
 - Collaborated with team members to deliver accessible and performant UI components.
 - Maintained code quality and documentation for reusability across projects.
 
@@ -44,9 +45,9 @@ A frontend developer with 5 years of experience in building web applications usi
 ### **Frontend Developer — Fujisoft Inc.**  
 *Tokyo, Japan | Apr 2023 – Mar 2024*
 
-- Contributed to a **SaaS product for child welfare services** for a municipal government.
-- Built responsive frontend features using **Nuxt.js**.
-- Participated in feature planning, code reviews, and UI implementation in a mid-size team.
+#### Development of child welfare services for Shinagawa Ward
+- Built responsive frontend features using **Nuxt.js**
+- Participated in feature planning, code reviews, and UI implementation in a mid-size team
 
 ---
 
