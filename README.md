@@ -1,6 +1,6 @@
-# Utano Kurihara — Frontend Developer
+# Utano Kurihara — Web Frontend Engineer
 ## Bio
-A frontend developer with 5 years of experience in building web applications using modern JavaScript frameworks. Skilled in both Vue.js/Nuxt.js and React/Next.js environments. Comfortable working in diverse teams and capable of reading and writing technical English documentation. Passionate about creating clean, user-friendly interfaces and contributing to a collaborative team culture.
+A web frontend engineer with 5 years experience, proficient in both **Vue.js/Nuxt and React/Next**. Comfortable working in diverse teams and capable of reading and writing technical English documentation. Passionate about creating clean, user-friendly interfaces and contributing to a collaborative team culture.
 
 ---
 
@@ -10,6 +10,7 @@ A frontend developer with 5 years of experience in building web applications usi
 ✅ Proficiency in JavaScript, TypeScript<br />
 ✅ Web design<br />
 ✅ Capable of working with international teams (English documentation & communication)<br />
+✅ Available for fully remote working<br />
 ✅ Open-minded, respectful team player<br />
 ✅ Curious and continually learning
 
@@ -24,7 +25,7 @@ A frontend developer with 5 years of experience in building web applications usi
 | Language | Level | Notes |
 |----------|-------|-------|
 | Japanese | Native | - |
-| English | Intermediate | Comfortable in reading/writing. Practicing spoken fluency. |
+| English | Advanced | Fluent |
 | Danish  | Basic | Can read and write simple sentences. |
 | French  | Basic | Can read and write simple sentences. |
 
@@ -33,7 +34,7 @@ A frontend developer with 5 years of experience in building web applications usi
 ## 💼 Work Experience
 
 ### **Frontend Engineer — SCSK Minori Solutions, Inc.**  
-*Tokyo, Japan | Apr 2024 – Sept 2025*
+*Nagano, Japan (full-remote) | Apr 2024 – Sept 2025*
 
 #### Development of multilingual SSO application for Epson products
 - Implementation with **Next.js, Redux, React Hook Form, TypeScript**
@@ -44,7 +45,7 @@ A frontend developer with 5 years of experience in building web applications usi
 ---
 
 ### **Frontend Engineer — Fujisoft Inc.**  
-*Tokyo, Japan | Apr 2023 – Mar 2024*
+*Kanagawa, Japan (full-remote)  | Apr 2023 – Mar 2024*
 
 #### Development of child security application for Shinagawa Ward
 - Implementation of 4 responsive mockups with **Nuxt.js, JavaScript**
@@ -57,7 +58,7 @@ When a student sounds the alarm, city hall receives student's location and alarm
 ---
 
 ### **Frontend Engineer — CRI Middleware Co., Ltd.**  
-*Tokyo, Japan | Apr 2021 – Mar 2023*
+*Tokyo, Japan (hybrid)   | Apr 2021 – Mar 2023*
 
 #### 🟢 Developer Portal for Voice Chat API  
 - Implementation of an internal portal with **Laravel and Nuxt.js**.
