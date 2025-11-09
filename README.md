@@ -38,9 +38,8 @@ A frontend developer with 5 years of experience in building web applications usi
 #### Development of multilingual SSO application for Epson products
 - Implementation with **Next.js, Redux, React Hook Form, TypeScript**
 - multilingualization with **i18next**
-- SSO(Single Sign On) function created with **Auth0**
-- Collaborated with team members to deliver accessible and performant UI components.
-- Maintained code quality and documentation for reusability across projects.
+- SSO(Single Sign On) function with **Auth0**
+- Maintained reusable and performant UI components
 
 ---
 
@@ -48,7 +47,7 @@ A frontend developer with 5 years of experience in building web applications usi
 *Tokyo, Japan | Apr 2023 – Mar 2024*
 
 #### Development of child welfare services for Shinagawa Ward
-- Built responsive mockups with **Nuxt.js, JavaScript**
+- Implementation of 4 responsive mockups with **Nuxt.js, JavaScript**
 - Participated in feature planning, code reviews, and UI implementation in a mid-size team
 
 ---
