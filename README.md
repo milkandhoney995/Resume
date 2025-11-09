@@ -43,16 +43,20 @@ A frontend developer with 5 years of experience in building web applications usi
 
 ---
 
-### **Frontend Developer — Fujisoft Inc.**  
+### **Frontend Engineer — Fujisoft Inc.**  
 *Tokyo, Japan | Apr 2023 – Mar 2024*
 
-#### Development of child welfare services for Shinagawa Ward
+#### Development of child security application for Shinagawa Ward
 - Implementation of 4 responsive mockups with **Nuxt.js, JavaScript**
 - Participated in feature planning, code reviews, and UI implementation in a mid-size team
 
+(*supplement*)<br />
+Shinagawa ward municipality destributes safety alarm equipped with phone and GPS to elementary school students in the ward. <br />
+When a student sounds the alarm, city hall receives student's location and alarmed time in the website, which would be also reported to the police, parents, and the school in case of emergency.
+
 ---
 
-### **Frontend Developer — CRI Middleware Co., Ltd.**  
+### **Frontend Engineer — CRI Middleware Co., Ltd.**  
 *Tokyo, Japan | Apr 2021 – Mar 2023*
 
 #### 🟢 Developer Portal for Voice Chat API  
