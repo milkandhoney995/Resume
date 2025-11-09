@@ -36,7 +36,7 @@ A frontend developer with 5 years of experience in building web applications usi
 *Tokyo, Japan | Apr 2024 – Sept 2025*
 
 #### Development of multilingual SSO application for Epson products
-- Frontend development with **Next.js, Redux, React Hook Form, TypeScript**
+- Implementation with **Next.js, Redux, React Hook Form, TypeScript**
 - multilingualization with **i18next**
 - SSO(Single Sign On) function created with **Auth0**
 - Collaborated with team members to deliver accessible and performant UI components.
