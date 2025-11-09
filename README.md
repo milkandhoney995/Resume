@@ -36,11 +36,14 @@ A web frontend engineer with 5 years experience, proficient in both **Vue.js/Nux
 ### **Frontend Engineer — SCSK Minori Solutions, Inc.**  
 *Nagano, Japan (full-remote) | Apr 2024 – Sept 2025*
 
-#### Development of multilingual SSO application for Epson products
+#### Development of multilingual SSO application for Seiko Epson products (*Epson Global ID*)
 - Implementation with **Next.js, Redux, React Hook Form, TypeScript**
 - multilingualization with **i18next**
 - SSO(Single Sign On) function with **Auth0**
 - Maintained reusable and performant UI components
+
+(*supplement*)<br />
+Seiko Epson is a Japanese multinational electronics company. *Epson Global ID* is a multilingual SSO application for its wide range of products, including printers, projectors, scanners, and watches.
 
 ---
 
