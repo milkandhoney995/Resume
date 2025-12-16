@@ -1,4 +1,4 @@
-# Utano Kurihara — Web Frontend Engineer
+# Gomadango(codename) — Web Frontend Engineer
 ## Bio
 A web frontend engineer with 5 years experience, proficient in both **Vue.js/Nuxt and React/Next**. Comfortable working in diverse teams and capable of reading and writing technical English documentation. Passionate about creating clean, user-friendly interfaces and contributing to a collaborative team culture.
 
