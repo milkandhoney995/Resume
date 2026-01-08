@@ -1,0 +1,22 @@
+career:
+  - company: SCSK Minori ソリューションズ株式会社
+    period: 2024年4月～2025年9月
+    employment: 派遣社員
+    department: 産業第一事業本部
+    summary: セイコーエプソン向け新オペレーターアプリ開発
+    phases:
+      - 基本設計
+      - 詳細設計
+      - 実装
+      - テスト
+    tasks:
+      - Next.js / TypeScript によるフロントエンド開発
+      - Playwright による自動テスト構築
+    achievements:
+      - UI改善によるUX向上
+    tech:
+      - Next.js
+      - TypeScript
+      - Auth0
+      - Playwright
+      - MUI

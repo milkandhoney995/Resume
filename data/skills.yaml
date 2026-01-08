@@ -1,0 +1,36 @@
+skills:
+  - category: OS
+    items:
+      - name: Mac
+        period: 3年0カ月
+        level: 環境設計・構築が可能
+      - name: Windows
+        period: 3年5カ月
+        level: 環境設計・構築が可能
+
+  - category: 言語
+    items:
+      - name: HTML
+        period: 5年5カ月
+        level: 最適なコード記述と改修が可能
+      - name: CSS / SCSS
+        period: 5年5カ月
+        level: 最適なコード記述と改修が可能
+      - name: JavaScript / TypeScript
+        period: 5年5カ月
+        level: 最適なコード記述と改修が可能
+
+  - category: フレームワーク
+    items:
+      - name: Vue.js / Nuxt.js
+        period: 4年0カ月
+        level: 最適なコード記述と改修が可能
+      - name: React.js / Next.js
+        period: 2年6カ月
+        level: 最適なコード記述と改修が可能
+
+  - category: デザイン
+    items:
+      - name: Figma / Adobe XD
+        period: 2年
+        level: UI/UX設計・デザイン作成が可能

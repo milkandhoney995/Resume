@@ -1,0 +1,48 @@
+works:
+  - title: オンラインポートフォリオ
+    period: 2025年11月～12月
+    description: >
+      React.js / TypeScript を用いて作成した個人ポートフォリオサイト。
+      日本語・英語切り替え対応。
+    frontend:
+      - Next.js
+      - TypeScript
+      - MUI
+    backend: []
+    tools:
+      - Vercel
+      - Figma
+    urls:
+      - https://my-portofolio-ten-red.vercel.app/ja
+
+  - title: 結婚式用Web招待状
+    period: 2025年1月～7月
+    description: >
+      結婚式用のWeb招待状。認証付きフォーム、管理画面、DB設計まで対応。
+    frontend:
+      - Next.js
+      - TypeScript
+      - MUI
+    backend:
+      - Python
+      - Flask
+      - PostgreSQL
+    tools:
+      - Vercel
+      - Render
+      - Figma
+    urls:
+      - https://web-invitation-orpin.vercel.app/
+
+  - title: チェスアプリ
+    period: 2023年1月～4月
+    description: >
+      React / TypeScript によるチェスアプリ。ロジック実装とUIを担当。
+    frontend:
+      - React
+      - TypeScript
+    backend: []
+    tools: []
+    urls:
+      - https://react-chess-beige.vercel.app/chess
+      - https://github.com/milkandhoney995/react-chess
