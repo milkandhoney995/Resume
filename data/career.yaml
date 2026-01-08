@@ -26,12 +26,7 @@ career:
           - SQLでのデータベース参照
           - フロントエンド資料作成・修正
           - バックエンド資料修正
-        tech:
-          - Next.js
-          - TypeScript
-          - Auth0
-          - MySQL
-          - Playwright
+        tech: Next.js, TypeScript, Auth0, MySQL, Playwright
 
   - company: 富士ソフト株式会社
     employment: 派遣社員
@@ -52,12 +47,7 @@ career:
           - Atomic Designに基づくコンポーネント設計
           - Spring BootでのBFF開発
           - JUnitでの単体テスト作成
-        tech:
-          - Vue3
-          - Nuxt3
-          - HTML
-          - CSS / SCSS
-          - Spring Boot
+        tech: Vue3, Nuxt3, HTML, CSS / SCSS, Spring Boot
 
   - company: 株式会社CRI・ミドルウェア
     employment: 正社員
@@ -76,8 +66,7 @@ career:
           - ボイスチャットアプリのQA業務
           - 開発機材の棚卸し
           - 技術記事作成
-        tech:
-          - Python
+        tech: Python
 
       - name: CEDEC2022 Webサイト制作
         period: 2022年4月～2022年10月
@@ -91,11 +80,7 @@ career:
         tasks:
           - 既存JavaScriptコードのリファクタリング
           - Laravelでの実装
-        tech:
-          - JavaScript
-          - Laravel
-          - HTML
-          - CSS / SCSS
+        tech: JavaScript, Laravel, HTML, CSS / SCSS
 
       - name: 自社新規サービス立ち上げ
         period: 2022年1月～2022年4月
@@ -109,12 +94,7 @@ career:
         tasks:
           - Nuxt.jsによるフロントエンド開発
           - デザイナーとのWebデザイン作成
-        tech:
-          - JavaScript
-          - Vue.js
-          - Laravel
-          - HTML
-          - CSS / SCSS
+        tech: JavaScript, Vue.js, Laravel, HTML, CSS / SCSS
 
       - name: 自社サービス向けUIライブラリ作成
         period: 2021年9月～2022年1月
@@ -131,10 +111,7 @@ career:
           - UIライブラリのデザイン調査
           - 要件定義・仕様書作成
           - UIライブラリの設計・実装・テスト
-        tech:
-          - Vue.js
-          - HTML
-          - CSS / SCSS
+        tech: Vue.js, HTML, CSS / SCSS
 
       - name: オンライン展示会プラットフォーム開発
         period: 2021年7月～2021年9月
@@ -150,11 +127,7 @@ career:
           - コーディング
           - テスト
           - 自社認証APIによるログイン機能改修
-        tech:
-          - Vue.js
-          - Nuxt.js
-          - HTML
-          - CSS / SCSS
+        tech: Vue.js, Nuxt.js, HTML, CSS / SCSS
 
   - company: 株式会社CRI・ミドルウェア
     employment: インターンシップ
@@ -175,8 +148,4 @@ career:
           - Photoshopによる画像編集
           - ピクチャー・イン・ピクチャーの実装検証
           - 企業WebサイトのUI/UXデザイン調査
-        tech:
-          - JavaScript
-          - HTML
-          - CSS / SCSS
-          - Photoshop
+        tech: JavaScript, HTML, CSS / SCSS, Photoshop

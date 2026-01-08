@@ -1,0 +1,18 @@
+languages:
+  - name: 英語
+    proficiency: 業務での読み書き・日常会話可
+    details:
+      - TOEIC 755点
+      - 実用英語技能検定 準一級
+
+  - name: フランス語
+    proficiency: 読解のみ
+    details: null
+
+  - name: ドイツ語
+    proficiency: 読解のみ
+    details: null
+
+  - name: デンマーク語
+    proficiency: 読解のみ
+    details: Duoligo 19
