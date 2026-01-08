@@ -42,43 +42,43 @@ lines.append(
     "業務外でも継続的に個人開発を行い、技術力の向上に努めている。\n\n"
 )
 
-# ===== 職務経歴 =====
+# ===== 職務経歴（会社 → 案件 ネスト表） =====
 lines.append("## 職務経歴\n\n")
 
-for job in career_list:
-    lines.append(f"### {job.get('period', '')}　{job.get('company', '')}\n\n")
+def cell(value):
+    if isinstance(value, list):
+        return "<br>".join(value)
+    return value or ""
 
-    if job.get("employment"):
-        lines.append(f"**雇用形態**  \n{job['employment']}\n\n")
+for company in career_list:
+    lines.append(f"### {company.get('company', '')}\n\n")
 
-    if job.get("department"):
-        lines.append(f"**配属**  \n{job['department']}\n\n")
+    if company.get("employment"):
+        lines.append(f"**雇用形態**：{company['employment']}  \n")
+    if company.get("period"):
+        lines.append(f"**在籍期間**：{company['period']}\n\n")
 
-    if job.get("summary"):
-        lines.append(f"**概要**  \n{job['summary']}\n\n")
+    for project in company.get("projects", []):
+        lines.append(f"#### 【案件】{project.get('name', '')}\n\n")
 
-    if job.get("phases"):
-        lines.append("**担当フェーズ**\n")
-        for p in job["phases"]:
-            lines.append(f"- {p}\n")
-        lines.append("\n")
+        lines.append("| 項目 | 内容 |\n")
+        lines.append("|---|---|\n")
 
-    if job.get("tasks"):
-        lines.append("**主な業務**\n")
-        for t in job["tasks"]:
-            lines.append(f"- {t}\n")
-        lines.append("\n")
+        rows = [
+            ("期間", project.get("period")),
+            ("規模", project.get("scale")),
+            ("役割", project.get("role")),
+            ("OS", project.get("os")),
+            ("概要", project.get("summary")),
+            ("担当フェーズ", cell(project.get("phases"))),
+            ("主な業務", cell(project.get("tasks"))),
+            ("使用技術", ", ".join(project.get("tech", []))),
+        ]
 
-    if job.get("achievements"):
-        lines.append("**実績・取り組み**\n")
-        for a in job["achievements"]:
-            lines.append(f"- {a}\n")
-        lines.append("\n")
+        for label, value in rows:
+            if value:
+                lines.append(f"| {label} | {value} |\n")
 
-    if job.get("tech"):
-        lines.append("**使用技術**\n")
-        for tech in job["tech"]:
-            lines.append(f"- {tech}\n")
         lines.append("\n")
 
 # ===== テクニカルスキル =====
@@ -105,11 +105,11 @@ lines.append("## 業務外での開発\n\n")
 for work in works_list:
     lines.append(f"### {work.get('title', '')}\n\n")
 
-    if work.get("period"):
-        lines.append(f"**制作期間**  \n{work['period']}\n\n")
-
     if work.get("description"):
-        lines.append(f"**概要**  \n{work['description']}\n\n")
+        lines.append(f"**概要**：{work['description']}\n\n")
+
+    if work.get("period"):
+        lines.append(f"**制作期間**{work['period']}\n\n")
 
     if work.get("frontend"):
         lines.append("**フロントエンド**\n")
