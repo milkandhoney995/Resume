@@ -45,10 +45,14 @@ lines.append(
 # ===== 職務経歴（会社 → 案件 ネスト表） =====
 lines.append("## 職務経歴\n\n")
 
-def cell(value):
-    if isinstance(value, list):
-        return "<br>".join(value)
-    return value or ""
+def bullet_list(items):
+    if not items:
+        return ""
+
+    if isinstance(items, str):
+        items = [items]
+
+    return r"\raw{openxml}{<w:br/>}".join(f"・{item}" for item in items)
 
 for company in career_list:
     lines.append(f"### {company.get('company', '')}\n\n")
@@ -70,9 +74,9 @@ for company in career_list:
             ("役割", project.get("role")),
             ("OS", project.get("os")),
             ("概要", project.get("summary")),
-            ("担当フェーズ", cell(project.get("phases"))),
-            ("主な業務", cell(project.get("tasks"))),
-            ("使用技術", ", ".join(project.get("tech", []))),
+            ("担当フェーズ", bullet_list(project.get("phases"))),
+            ("主な業務", bullet_list(project.get("tasks"))),
+            ("使用技術", bullet_list(project.get("tech"))),
         ]
 
         for label, value in rows:
