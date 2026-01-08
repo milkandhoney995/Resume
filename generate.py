@@ -144,7 +144,7 @@ for block in skills_list:
 # 語学
 # =========================
 lines.append("## 語学\n\n")
-lines.append("| 言語 | 習熟度 | 資格・補足 |\n")
+lines.append("| 言語 | 習熟度 | 資格 / 補足 |\n")
 lines.append("|---|---|---|\n")
 
 for lang in languages:
@@ -180,9 +180,9 @@ for work in works_list:
     rows = [
         ("概要", work.get("description")),
         ("制作期間", work.get("period")),
-        ("フロントエンド", bullet_cell(work.get("frontend"))),
-        ("バックエンド", bullet_cell(work.get("backend"))),
-        ("使用ツール", bullet_cell(work.get("tools"))),
+        ("フロントエンド", work.get("frontend")),
+        ("バックエンド", work.get("backend")),
+        ("使用ツール", work.get("tools")),
         ("URL", bullet_cell(work.get("urls"))),
     ]
 

@@ -4,14 +4,9 @@ works:
     description: >
       React.js / TypeScript を用いて作成した個人ポートフォリオサイト。
       日本語・英語切り替え対応。
-    frontend:
-      - Next.js
-      - TypeScript
-      - MUI
+    frontend: Next.js, TypeScript, MUI
     backend: []
-    tools:
-      - Vercel
-      - Figma
+    tools: Vercel, Figma
     urls:
       - https://my-portofolio-ten-red.vercel.app/ja
 
@@ -19,28 +14,17 @@ works:
     period: 2025年1月～7月
     description: >
       結婚式用のWeb招待状。認証付きフォーム、管理画面、DB設計まで対応。
-    frontend:
-      - Next.js
-      - TypeScript
-      - MUI
-    backend:
-      - Python
-      - Flask
-      - PostgreSQL
-    tools:
-      - Vercel
-      - Render
-      - Figma
+    frontend: Next.js, TypeScript, MUI
+    backend: Python, Flask, PostgreSQL
+    tools:  Vercel, Render, Figma
     urls:
       - https://web-invitation-orpin.vercel.app/
 
   - title: チェスアプリ
     period: 2023年1月～4月
     description: >
-      React / TypeScript によるチェスアプリ。ロジック実装とUIを担当。
-    frontend:
-      - React
-      - TypeScript
+      React / TypeScript によるチェスアプリ。ドメイン駆動設計 (DDD) を採用。状態管理はuseReducerで実装。
+    frontend: Next.js, TypeScript, CSS
     backend: []
     tools: []
     urls:
