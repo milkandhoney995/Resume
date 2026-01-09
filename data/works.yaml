@@ -3,7 +3,7 @@ works:
     period: 2025年11月～12月
     description: >
       React.js / TypeScript を用いて作成した個人ポートフォリオサイト。
-      日本語・英語切り替え対応。
+      日本語/英語/デンマーク語切り替え対応。
     frontend: Next.js, TypeScript, MUI
     backend: []
     tools: Vercel, Figma

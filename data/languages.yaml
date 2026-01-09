@@ -7,11 +7,11 @@ languages:
 
   - name: フランス語
     proficiency: 読解のみ
-    details: null
+    details: 大学で履修
 
   - name: ドイツ語
     proficiency: 読解のみ
-    details: null
+    details: Duoligo 50
 
   - name: デンマーク語
     proficiency: 初学者

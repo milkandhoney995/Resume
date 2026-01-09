@@ -97,11 +97,10 @@ for company in career_list:
 
         rows = [
             (project.get("period"), project.get('department', '')),
-            (" ", project.get('name', '')),
+            (" ", f'**概要**：{project.get("summary")}'),
             (" ", f'**規模**：{project.get("scale")}'),
             (" ", f'**役割**：{project.get("role")}'),
             (" ", f'**OS**：{project.get("os")}'),
-            (" ", f'**概要**：{project.get("summary")}'),
             (" ", "**担当フェーズ**"),
             (" ", f'{bullet_cell(project.get("phases"), "・")}'),
             (" ", "**主な業務**"),
@@ -165,26 +164,27 @@ lines.append("\n")
 # =========================
 lines.append("## 業務外での開発\n\n")
 
+lines.append("| タイトル | 内容 |\n")
+lines.append("|---|---|\n")
+
 for work in works_list:
-    lines.append(f"### {work.get('title', '')}\n\n")
 
-    lines.append("| 項目 | 内容 |\n")
-    lines.append("|---|---|\n")
+    lines.append(f"| {work.get('title','')} | **概要**：{work.get('description','')} |\n")
 
-    rows = [
-        ("概要", work.get("description")),
-        ("制作期間", work.get("period")),
-        ("フロントエンド", work.get("frontend")),
-        ("バックエンド", work.get("backend")),
-        ("使用ツール", work.get("tools")),
-        ("URL", bullet_cell(work.get("urls"), "・")),
-    ]
+    if work.get('period'):
+        lines.append(f"|  | **制作期間**：{work.get('period')} |\n")
 
-    for label, value in rows:
-        if value:
-            lines.append(f"| {label} | {value} |\n")
+    if work.get('frontend'):
+        lines.append(f"|  | **フロントエンド**：{work.get('frontend')} |\n")
 
-    lines.append("\n")
+    if work.get('backend') and work.get('backend') != []:
+        lines.append(f"|  | **バックエンド**：{work.get('backend')} |\n")
+
+    if work.get('tools') and work.get('tools') != []:
+        lines.append(f"|  | **使用ツール**：{work.get('tools')} |\n")
+
+    if work.get('urls') and work.get('urls') != []:
+        lines.append(f"|  | **URL**：{bullet_cell(work.get('urls'), '・')} |\n")
 
 
 # =========================
@@ -193,7 +193,8 @@ for work in works_list:
 lines.append("## 自己PR\n\n")
 
 for section in self_pr["about_me"]:
-    lines.append(f"{section.get('body','')}\n\n")
+    body = section.get('body', '').replace('\n', '  \n')
+    lines.append(f"{body}\n\n")
 
 
 # =========================

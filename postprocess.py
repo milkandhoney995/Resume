@@ -11,8 +11,8 @@ for table in doc.tables:
 
     # ===== 2列テーブル（期間｜業務内容）=====
     if col_count == 2:
-        left_width = Inches(1.2)
-        right_width = Inches(5.5)
+        left_width = Inches(2.0)
+        right_width = Inches(4.7)
 
         for row in table.rows:
             row.cells[0].width = left_width

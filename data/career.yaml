@@ -18,15 +18,11 @@ career:
         phases:
           - 基本設計
           - 詳細設計
-          - 開発
           - 実装
-          - 単体テスト
-          - 結合テスト
-          - 総合テスト
+          - テスト(単体、結合、総合)
         tasks:
-          - Next.js + TypeScript + MUIでのフロントエンド開発
+          - Next.js + TypeScript + MUI + Playwrightでのフロントエンド開発
           - Auth0でのバックエンド開発
-          - Playwrightを使用した自動テスト作成
           - SQLでのデータベース参照
           - フロントエンド / バックエンド資料作成
         tech: Next.js, TypeScript, Auth0, MySQL, Playwright
@@ -73,6 +69,8 @@ career:
         scale: PJ要員10名
         role: メンバー
         os: Mac / Windows
+        phases:
+          - 保守運用
         tasks:
           - GitLab等社内ツールのバージョンアップ対応
           - PythonによるAtomCraft自動テスト作成
@@ -114,7 +112,7 @@ career:
       - department: 第4開発部　フロントエンドチーム
         name: 自社サービス向けUIライブラリ作成
         period: 2021年9月～2022年1月
-        summary: Material Designに基づく自社UIライブラリの設計・実装
+        summary: Material Designに基づく自社UIライブラリの設計、実装
         scale: PJ要員3名
         role: メンバー
         os: Mac
