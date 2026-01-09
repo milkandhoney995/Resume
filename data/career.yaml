@@ -8,7 +8,7 @@ career:
     period: 2024年4月～2025年9月
 
     projects:
-      - department: ほげほげ事業本部
+      - department: 産業金融ビジネスユニット　産業第一事業本部　松本ソリューション本部　第一課
         name: 新オペレーターアプリケーション／新顧客向けアプリケーション開発
         period: 2024年4月～2025年9月
         summary: セイコーエプソン株式会社の新オペレーターアプリケーション、新顧客向けアプリケーションの開発案件
@@ -40,7 +40,7 @@ career:
     period: 2023年4月～2024年3月
 
     projects:
-      - department: ほげほげ事業本部
+      - department: ネットサービス事業部 第1技術部 第3技術グループ
         name: 児童見守りサービス「まもるっち」開発
         period: 2023年4月～2024年3月
         summary: 品川区の児童見守りサービス「まもるっち」のWebアプリケーション開発
@@ -66,7 +66,7 @@ career:
     period: 2021年4月～2023年3月
 
     projects:
-      - department: 開発支援室
+      - department: 開発支援室　サーバーチーム
         name: 他部署向け開発支援
         period: 2022年10月～2023年3月
         summary: 他部署の開発支援業務を担当
@@ -81,7 +81,7 @@ career:
           - 技術記事作成
         tech: Python
 
-      - department: 第4事業部
+      - department: 第4開発部　フロントエンドチーム
         name: CEDEC2022 Webサイト制作
         period: 2022年4月～2022年10月
         summary: ゲーム開発者向けイベントCEDEC2022のWebサイト制作
@@ -96,7 +96,7 @@ career:
           - Laravelでの実装
         tech: JavaScript, Laravel, HTML, CSS / SCSS
 
-      - department: 第4事業部
+      - department: 第4開発部　フロントエンドチーム
         name: 自社新規サービス立ち上げ
         period: 2022年1月～2022年4月
         summary: 自社ボイスチャット「CRI TeleXus」開発者向けポータルサイトのフロントエンド開発
@@ -111,7 +111,7 @@ career:
           - デザイナーとのWebデザイン作成
         tech: JavaScript, Vue.js, Laravel, HTML, CSS / SCSS
 
-      - department: 第4事業部
+      - department: 第4開発部　フロントエンドチーム
         name: 自社サービス向けUIライブラリ作成
         period: 2021年9月～2022年1月
         summary: Material Designに基づく自社UIライブラリの設計・実装

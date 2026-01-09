@@ -205,17 +205,8 @@ for work in works_list:
 # =========================
 lines.append("## 自己PR\n\n")
 
-if "about_me" in self_pr:
-    lines.append("### 私について\n\n")
-    for section in self_pr["about_me"]:
-        lines.append(f"**{section.get('title','')}**\n\n")
-        lines.append(f"{section.get('body','')}\n\n")
-
-if "technical" in self_pr:
-    lines.append("### 技術について\n\n")
-    for section in self_pr["technical"]:
-        lines.append(f"**{section.get('title','')}**\n\n")
-        lines.append(f"{section.get('body','')}\n\n")
+for section in self_pr["about_me"]:
+    lines.append(f"{section.get('body','')}\n\n")
 
 
 # =========================
