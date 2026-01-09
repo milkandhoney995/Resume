@@ -18,16 +18,18 @@ for table in doc.tables:
             row.cells[0].width = left_width
             row.cells[1].width = right_width
 
-    # ===== 3列テーブル（スキル）=====
-    elif col_count == 3:
-        w1 = Inches(2.0)  # スキル名
-        w2 = Inches(2.2)  # 使用期間
-        w3 = Inches(2.0)  # レベル
+    # ===== 4列テーブル（スキル）=====
+    elif col_count == 4:
+        w1 = Inches(1.3)  # カテゴリ
+        w2 = Inches(1.8)  # スキル名
+        w3 = Inches(1.0)  # 使用期間
+        w4 = Inches(3.0)  # レベル
 
         for row in table.rows:
             row.cells[0].width = w1
             row.cells[1].width = w2
             row.cells[2].width = w3
+            row.cells[3].width = w4
 
     # ===== 共通：擬似箇条書き処理 =====
     for row in table.rows:

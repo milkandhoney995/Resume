@@ -124,20 +124,20 @@ for company in career_list:
 # テクニカルスキル
 # =========================
 lines.append("## テクニカルスキル\n\n")
+lines.append("| カテゴリ | スキル | 使用期間 | レベル |\n")
+lines.append("|---|---|---|---|\n")
 
 for block in skills_list:
-    lines.append(f"### {block.get('category', '')}\n\n")
-    lines.append("| スキル | 使用期間 | レベル |\n")
-    lines.append("|---|---|---|\n")
-
-    for item in block.get("items", []):
+    for i, item in enumerate(block.get("items", [])):
+        category = block.get("category", "") if i == 0 else ""
         lines.append(
-            f"| {item.get('name','')} | "
+            f"| {category} | "
+            f"{item.get('name','')} | "
             f"{item.get('period','')} | "
             f"{item.get('level','')} |\n"
         )
 
-    lines.append("\n")
+lines.append("\n")
 
 
 # =========================
