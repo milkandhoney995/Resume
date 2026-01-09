@@ -62,8 +62,8 @@ career:
     revenue: 100億円
     employees: 300人
     industry: 情報・通信業
-    employment: 正社員
-    period: 2021年4月～2023年3月
+    employment: 正社員 / インターンシップ
+    period: 2020年5月～2023年3月
 
     projects:
       - department: 開発支援室　サーバーチーム
@@ -144,15 +144,6 @@ career:
           - 自社認証APIによるログイン機能改修
         tech: Vue.js, Nuxt.js, HTML, CSS / SCSS
 
-  - company: 株式会社CRI・ミドルウェア
-    capital: 0.78億円
-    revenue: 100億円
-    employees: 300人
-    industry: 情報・通信業
-    employment: インターンシップ
-    period: 2020年5月～2021年3月
-
-    projects:
       - department: インターネット事業部
         name: 動画ホスティングサービス「LiveAct Pro」開発補佐
         period: 2020年5月～2021年3月

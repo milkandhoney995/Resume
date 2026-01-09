@@ -90,10 +90,10 @@ for company in career_list:
     lines.append(f"売上高：{company.get('revenue', '')} 　")
     lines.append(f"従業員数：{company.get('employees', '')}  \n\n")
 
-    for project in company.get("projects", []):
+    lines.append("| 期間 | 業務内容 |\n")
+    lines.append("|---|---|\n")
 
-        lines.append("| 期間 | 業務内容 |\n")
-        lines.append("|---|---|\n")
+    for project in company.get("projects", []):
 
         rows = [
             (project.get("period"), project.get('department', '')),
@@ -109,22 +109,9 @@ for company in career_list:
             (" ", f'**使用技術**：{project.get("tech")}'),
         ]
 
-        # rows = [
-        #     ("期間", project.get("period")),
-        #     ("規模", project.get("scale")),
-        #     ("役割", project.get("role")),
-        #     ("OS", project.get("os")),
-        #     ("概要", project.get("summary")),
-        #     ("担当フェーズ", bullet_cell(project.get("phases"), "・")),
-        #     ("主な業務", bullet_cell(project.get("tasks"), "・")),
-        #     ("使用技術", project.get("tech")),
-        # ]
-
         for label, value in rows:
             if value:
                 lines.append(f"| {label} | {value} |\n")
-
-        lines.append("\n")
 
 
 # =========================
