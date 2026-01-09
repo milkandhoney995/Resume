@@ -1,4 +1,21 @@
 # Gomadango(codename) — Web Frontend Engineer
+
+## How to Generate CVs
+
+### Japanese CV (職務経歴書)
+```bash
+./build.sh
+```
+This generates `職務経歴書.docx`
+
+### English CV
+```bash
+./build_en.sh
+```
+This generates `CV.docx`
+
+---
+
 ## Bio
 A web frontend engineer with 5 years experience, proficient in both **Vue.js/Nuxt and React/Next**. Comfortable working in diverse teams and capable of reading and writing technical English documentation. Passionate about creating clean, user-friendly interfaces and contributing to a collaborative team culture.
 

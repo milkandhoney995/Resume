@@ -1,0 +1,32 @@
+works:
+  - title: Online Portfolio
+    period: November 2025 - December 2025
+    description: >
+      Personal portfolio site created using React.js / TypeScript.
+      Supports switching between Japanese/English/Danish.
+    frontend: Next.js, TypeScript, MUI
+    backend: []
+    tools: Vercel, Figma
+    urls:
+      - https://my-portofolio-ten-red.vercel.app/ja
+
+  - title: Web Invitation for Wedding
+    period: January 2025 - July 2025
+    description: >
+      Web invitation for wedding. Handles authentication forms, admin screen, and database design.
+    frontend: Next.js, TypeScript, MUI
+    backend: Python, Flask, PostgreSQL
+    tools: Vercel, Render, Figma
+    urls:
+      - https://web-invitation-orpin.vercel.app/
+
+  - title: Chess App
+    period: January 2023 - April 2023
+    description: >
+      Chess app using React / TypeScript. Adopted Domain Driven Design (DDD). State management implemented with useReducer.
+    frontend: Next.js, TypeScript, CSS
+    backend: []
+    tools: []
+    urls:
+      - https://react-chess-beige.vercel.app/chess
+      - https://github.com/milkandhoney995/react-chess

@@ -2,11 +2,15 @@ import yaml
 from pathlib import Path
 from datetime import date
 from typing import Any, Dict, List
+import sys
 
 
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
-OUTPUT_MD = BASE_DIR / "resume.md"
+
+# Language selection
+LANGUAGE = sys.argv[1] if len(sys.argv) > 1 else "ja"
+OUTPUT_MD = BASE_DIR / f"resume_{LANGUAGE}.md"
 
 
 # =========================
@@ -33,13 +37,16 @@ def load_yaml_dict(path: Path, key: str) -> Dict[str, Any]:
 # =========================
 # Load data
 # =========================
-career_list = load_yaml_list(DATA_DIR / "career.yaml", "career")
-works_list = load_yaml_list(DATA_DIR / "works.yaml", "works")
-skills_list = load_yaml_list(DATA_DIR / "skills.yaml", "skills")
-languages = load_yaml_list(DATA_DIR / "languages.yaml", "languages")
-strengths = load_yaml_list(DATA_DIR / "strengths.yaml", "strengths")
-self_pr = load_yaml_dict(DATA_DIR / "self_pr.yaml", "self_pr")
-profile = load_yaml_dict(DATA_DIR / "profile.yaml", "profile")
+def get_data_filename(base_name: str) -> str:
+    return f"{base_name}_en.yaml" if LANGUAGE == "en" else f"{base_name}.yaml"
+
+career_list = load_yaml_list(DATA_DIR / get_data_filename("career"), "career")
+works_list = load_yaml_list(DATA_DIR / get_data_filename("works"), "works")
+skills_list = load_yaml_list(DATA_DIR / get_data_filename("skills"), "skills")
+languages = load_yaml_list(DATA_DIR / get_data_filename("languages"), "languages")
+strengths = load_yaml_list(DATA_DIR / get_data_filename("strengths"), "strengths")
+self_pr = load_yaml_dict(DATA_DIR / get_data_filename("self_pr"), "self_pr")
+profile = load_yaml_dict(DATA_DIR / get_data_filename("profile"), "profile")
 
 
 lines: List[str] = []
@@ -61,51 +68,72 @@ def bullet_cell(items: Any, bullet: str) -> str:
 # =========================
 # タイトル
 # =========================
-lines.append(f"# {profile.get('title', '職務経歴書')}\n\n")
+lines.append(f"# {profile.get('title', '職務経歴書' if LANGUAGE == 'ja' else 'Curriculum Vitae')}\n\n")
 
 if profile.get("date") == "auto":
-    today = date.today().strftime("%Y年%-m月%-d日現在")
+    if LANGUAGE == "ja":
+        today = date.today().strftime("%Y年%-m月%-d日現在")
+    else:
+        today = date.today().strftime("As of %B %-d, %Y")
     lines.append(f"{today}\n\n")
 
 if profile.get("name"):
-    lines.append(f"氏名　{profile['name']}\n\n")
+    if LANGUAGE == "ja":
+        lines.append(f"氏名　{profile['name']}\n\n")
+    else:
+        lines.append(f"Name: {profile['name']}\n\n")
 
 
 # =========================
 # 職務要約
 # =========================
-lines.append("## 職務要約\n\n")
+if LANGUAGE == "ja":
+    lines.append("## 職務要約\n\n")
+else:
+    lines.append("## Professional Summary\n\n")
 lines.append(f"{profile.get('summary', '')}\n\n")
 
 
 # =========================
 # 職務経歴（会社 → 案件）
 # =========================
-lines.append("## 職務経歴\n\n")
+if LANGUAGE == "ja":
+    lines.append("## 職務経歴\n\n")
+else:
+    lines.append("## Work Experience\n\n")
 
 for company in career_list:
-    lines.append(f"### {company.get('company', '')}(在籍期間: {company.get('period', '')})\n\n")
-    lines.append(f"事業内容：{company.get('industry', '')}　")
-    lines.append(f"資本金：{company.get('capital', '')}　")
-    lines.append(f"売上高：{company.get('revenue', '')} 　")
-    lines.append(f"従業員数：{company.get('employees', '')}  \n\n")
+    lines.append(f"### {company.get('company', '')}({company.get('period', '')})\n\n")
+    if LANGUAGE == "ja":
+        lines.append(f"事業内容：{company.get('industry', '')}　")
+        lines.append(f"資本金：{company.get('capital', '')}　")
+        lines.append(f"売上高：{company.get('revenue', '')} 　")
+        lines.append(f"従業員数：{company.get('employees', '')}  \n\n")
 
-    lines.append("| 期間 | 業務内容 |\n")
-    lines.append("|---|---|\n")
+        lines.append("| 期間 | 業務内容 |\n")
+        lines.append("|---|---|\n")
+    else:
+        lines.append(f"Business: {company.get('industry', '')}　")
+        lines.append(f"Capital: {company.get('capital', '')}　")
+        lines.append(f"Revenue: {company.get('revenue', '')} 　")
+        lines.append(f"Employees: {company.get('employees', '')}  \n\n")
+
+        lines.append("| Period | Responsibilities |\n")
+        lines.append("|---|---|\n")
 
     for project in company.get("projects", []):
 
         rows = [
             (project.get("period"), project.get('department', '')),
-            (" ", f'**概要**：{project.get("summary")}'),
-            (" ", f'**規模**：{project.get("scale")}'),
-            (" ", f'**役割**：{project.get("role")}'),
-            (" ", f'**OS**：{project.get("os")}'),
-            (" ", "**担当フェーズ**"),
+            (" ", f'**概要**：{project.get("summary")}' if LANGUAGE == "ja" else f'**Overview**: {project.get("summary")}'),
+            (" ", f'**規模**：{project.get("scale")}' if LANGUAGE == "ja" else f'**Scale**: {project.get("scale")}'),
+            (" ", f'**役割**：{project.get("role")}' if LANGUAGE == "ja" else f'**Role**: {project.get("role")}'),
+            (" ", f'**OS**：{project.get("os")}' if LANGUAGE == "ja" else f'**OS**: {project.get("os")}'),
+            (" ", "**担当フェーズ**" if LANGUAGE == "ja" else "**Phases**"),
             (" ", f'{bullet_cell(project.get("phases"), "・")}'),
-            (" ", "**主な業務**"),
+            (" ", "**主な業務**" if LANGUAGE == "ja" else "**Main Tasks**"),
             (" ", f'{bullet_cell(project.get("tasks"), "・")}'),
-            (" ", f'**使用技術**：{project.get("tech")}'),
+            (" ", f'**使用技術**：{project.get("tech")}' if LANGUAGE == "ja" else f'**Technologies**: {project.get("tech")}'),
         ]
 
         for label, value in rows:
@@ -116,9 +144,14 @@ for company in career_list:
 # =========================
 # テクニカルスキル
 # =========================
-lines.append("## テクニカルスキル\n\n")
-lines.append("| カテゴリ | スキル | 使用期間 | レベル |\n")
-lines.append("|---|---|---|---|\n")
+if LANGUAGE == "ja":
+    lines.append("## テクニカルスキル\n\n")
+    lines.append("| カテゴリ | スキル | 使用期間 | レベル |\n")
+    lines.append("|---|---|---|---|\n")
+else:
+    lines.append("## Technical Skills\n\n")
+    lines.append("| Category | Skill | Experience | Level |\n")
+    lines.append("|---|---|---|---|\n")
 
 for block in skills_list:
     for i, item in enumerate(block.get("items", [])):
@@ -136,9 +169,14 @@ lines.append("\n")
 # =========================
 # 語学
 # =========================
-lines.append("## 語学\n\n")
-lines.append("| 言語 | 習熟度 | 資格 / 補足 |\n")
-lines.append("|---|---|---|\n")
+if LANGUAGE == "ja":
+    lines.append("## 語学\n\n")
+    lines.append("| 言語 | 習熟度 | 資格 / 補足 |\n")
+    lines.append("|---|---|---|\n")
+else:
+    lines.append("## Languages\n\n")
+    lines.append("| Language | Proficiency | Qualifications / Notes |\n")
+    lines.append("|---|---|---|\n")
 
 for lang in languages:
     lines.append(
@@ -153,7 +191,10 @@ lines.append("\n")
 # =========================
 # 活かせる経験・知識・技術
 # =========================
-lines.append("## 活かせる経験・知識・技術\n\n")
+if LANGUAGE == "ja":
+    lines.append("## 活かせる経験・知識・技術\n\n")
+else:
+    lines.append("## Applicable Experience, Knowledge, and Skills\n\n")
 for item in strengths:
     lines.append(f"- {item}\n")
 lines.append("\n")
@@ -162,35 +203,42 @@ lines.append("\n")
 # =========================
 # 業務外での開発
 # =========================
-lines.append("## 業務外での開発\n\n")
-
-lines.append("| タイトル | 内容 |\n")
-lines.append("|---|---|\n")
+if LANGUAGE == "ja":
+    lines.append("## 業務外での開発\n\n")
+    lines.append("| タイトル | 内容 |\n")
+    lines.append("|---|---|\n")
+else:
+    lines.append("## Personal Projects\n\n")
+    lines.append("| Title | Description |\n")
+    lines.append("|---|---|\n")
 
 for work in works_list:
 
-    lines.append(f"| {work.get('title','')} | **概要**：{work.get('description','')} |\n")
+    lines.append(f"| {work.get('title','')} | **概要**：{work.get('description','')} |\n" if LANGUAGE == "ja" else f"| {work.get('title','')} | **Overview**: {work.get('description','')} |\n")
 
     if work.get('period'):
-        lines.append(f"|  | **制作期間**：{work.get('period')} |\n")
+        lines.append(f"|  | **制作期間**：{work.get('period')} |\n" if LANGUAGE == "ja" else f"|  | **Development Period**: {work.get('period')} |\n")
 
     if work.get('frontend'):
-        lines.append(f"|  | **フロントエンド**：{work.get('frontend')} |\n")
+        lines.append(f"|  | **フロントエンド**：{work.get('frontend')} |\n" if LANGUAGE == "ja" else f"|  | **Frontend**: {work.get('frontend')} |\n")
 
     if work.get('backend') and work.get('backend') != []:
-        lines.append(f"|  | **バックエンド**：{work.get('backend')} |\n")
+        lines.append(f"|  | **バックエンド**：{work.get('backend')} |\n" if LANGUAGE == "ja" else f"|  | **Backend**: {work.get('backend')} |\n")
 
     if work.get('tools') and work.get('tools') != []:
-        lines.append(f"|  | **使用ツール**：{work.get('tools')} |\n")
+        lines.append(f"|  | **使用ツール**：{work.get('tools')} |\n" if LANGUAGE == "ja" else f"|  | **Tools Used**: {work.get('tools')} |\n")
 
     if work.get('urls') and work.get('urls') != []:
-        lines.append(f"|  | **URL**：{bullet_cell(work.get('urls'), '・')} |\n")
+        lines.append(f"|  | **URL**：{bullet_cell(work.get('urls'), '・')} |\n" if LANGUAGE == "ja" else f"|  | **URL**: {bullet_cell(work.get('urls'), '・')} |\n")
 
 
 # =========================
 # 自己PR
 # =========================
-lines.append("## 自己PR\n\n")
+if LANGUAGE == "ja":
+    lines.append("## 自己PR\n\n")
+else:
+    lines.append("## Self-Promotion\n\n")
 
 for section in self_pr["about_me"]:
     body = section.get('body', '').replace('\n', '  \n')
@@ -203,4 +251,4 @@ for section in self_pr["about_me"]:
 with open(OUTPUT_MD, "w", encoding="utf-8") as f:
     f.writelines(lines)
 
-print("resume.md generated successfully.")
+print(f"resume_{LANGUAGE}.md generated successfully.")

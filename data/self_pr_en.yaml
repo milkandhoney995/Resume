@@ -1,0 +1,7 @@
+self_pr:
+  about_me:
+    - title: Self Introduction
+      body: |
+        My strengths lie in my perseverance and concentration in tackling tasks, contributing to team efficiency improvement. In the Fujisoft Inc. project, I designed and implemented 4 web mockups from scratch using Atomic Design.
+        Technically, I have experience in frontend development using React.js and Vue.js, implementation using Next.js/TypeScript, and authentication function implementation using Auth0. I am also skilled in web application design creation. In the development of Fujisoft Inc.'s child safety service "Mamolutchi", I was responsible for creating web designs for 4 applications in total. At CRI Middleware, I developed an in-house UI library based on Material Design. From this experience, I can also make proposals to improve UI/UX.
+        In communication, I value clearly expressing my own opinions while respecting others' opinions. I also enjoy technical challenges and continuously produce outputs in my private time.

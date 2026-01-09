@@ -1,8 +1,13 @@
 from docx import Document
 from docx.shared import Inches
 from pathlib import Path
+import sys
 
-path = Path("職務経歴書.docx")
+# Get language from command line argument, default to Japanese
+language = sys.argv[1] if len(sys.argv) > 1 else "ja"
+filename = "CV.docx" if language == "en" else "職務経歴書.docx"
+
+path = Path(filename)
 doc = Document(str(path))
 
 for table in doc.tables:

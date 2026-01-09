@@ -1,0 +1,160 @@
+career:
+  - company: SCSK Minori Solutions, Inc.
+    capital: 480 million yen
+    revenue: 29 billion yen
+    employees: 1,451 people
+    industry: Information and communications industry
+    employment: Temporary employee
+    period: April 2024 - September 2025
+
+    projects:
+      - department: Industrial Finance Business Unit, Industrial First Business Headquarters, Matsumoto Solutions Headquarters, First Section
+        name: New Operator Application / New Customer Application Development
+        period: April 2024 - September 2025
+        summary: Development project for Seiko Epson Corporation's new operator application and new customer application
+        scale: 20 project members
+        role: Member
+        os: Windows
+        phases:
+          - Basic design
+          - Detailed design
+          - Implementation
+          - Testing (unit, integration, comprehensive)
+        tasks:
+          - Frontend development with Next.js + TypeScript + MUI + Playwright
+          - Backend development with Auth0
+          - Database reference with SQL
+          - Creation of frontend/backend documentation
+        tech: Next.js, TypeScript, Auth0, MySQL, Playwright
+
+  - company: Fujisoft Incorporated
+    capital: 100 million yen
+    revenue: 317.4 billion yen
+    employees: 19,669 people
+    industry: Information and communications industry
+    employment: Temporary employee
+    period: April 2023 - March 2024
+
+    projects:
+      - department: Net Services Division, First Technology Department, Third Technology Group
+        name: Child Safety Service "Mamolutchi" Development
+        period: April 2023 - March 2024
+        summary: Web application development for Shinagawa Ward's child safety service "Mamolutchi"
+        scale: 43 project members
+        role: Member
+        os: Windows
+        phases:
+          - Implementation
+          - Unit testing
+        tasks:
+          - Implementation of 4 application web design mocks with Nuxt.js
+          - Component design based on Atomic Design
+          - BFF development with Spring Boot
+          - Creation of unit tests with JUnit
+        tech: Vue3, Nuxt3, HTML, CSS / SCSS, Spring Boot
+
+  - company: CRI Middleware Co., Ltd.
+    capital: 78 million yen
+    revenue: 10 billion yen
+    employees: 300 people
+    industry: Information and communications industry
+    employment: Full-time employee / Internship
+    period: May 2020 - March 2023
+
+    projects:
+      - department: Development Support Office, Server Team
+        name: Development Support for Other Departments
+        period: October 2022 - March 2023
+        summary: Responsible for development support work for other departments
+        scale: 10 project members
+        role: Member
+        os: Mac / Windows
+        phases:
+          - Maintenance and operation
+        tasks:
+          - Version upgrade support for in-house tools such as GitLab
+          - Creation of automated tests for AtomCraft with Python
+          - QA work for voice chat app
+          - Inventory of development equipment
+          - Creation of technical articles
+        tech: Python
+
+      - department: Fourth Development Department, Frontend Team
+        name: CEDEC2022 Website Production
+        period: April 2022 - October 2022
+        summary: Website production for game developer event CEDEC2022
+        scale: 10 project members
+        role: Member
+        os: Mac
+        phases:
+          - Frontend development
+          - Testing
+        tasks:
+          - Refactoring of existing JavaScript code
+          - Implementation with Laravel
+        tech: JavaScript, Laravel, HTML, CSS / SCSS
+
+      - department: Fourth Development Department, Frontend Team
+        name: In-house New Service Launch
+        period: January 2022 - April 2022
+        summary: Frontend development for developer portal site for in-house voice chat "CRI TeleXus"
+        scale: 12 project members
+        role: Member
+        os: Mac
+        phases:
+          - Implementation
+          - Unit testing
+        tasks:
+          - Frontend development with Nuxt.js
+          - Web design creation with designer
+        tech: JavaScript, Vue.js, Laravel, HTML, CSS / SCSS
+
+      - department: Fourth Development Department, Frontend Team
+        name: UI Library Creation for In-house Services
+        period: September 2021 - January 2022
+        summary: Design and implementation of in-house UI library based on Material Design
+        scale: 3 project members
+        role: Member
+        os: Mac
+        phases:
+          - Requirements definition
+          - Design
+          - Implementation
+          - Testing
+        tasks:
+          - Design survey, design, implementation, and testing of UI library
+          - Requirements definition and specification creation
+        tech: Vue.js, HTML, CSS / SCSS
+
+      - department: Internet Business Department
+        name: Online Exhibition Platform Development
+        period: July 2021 - September 2021
+        summary: Feature addition development for in-house product "DXExpo"
+        scale: 8 project members
+        role: Member
+        os: Mac
+        phases:
+          - Implementation
+          - Unit testing
+        tasks:
+          - Frontend development with Nuxt.js
+          - Manual testing
+          - Login function modification using in-house authentication API
+        tech: Vue.js, Nuxt.js, HTML, CSS / SCSS
+
+      - department: Internet Business Department
+        name: Video Hosting Service "LiveAct Pro" Development Assistance
+        period: May 2020 - March 2021
+        summary: Research and development assistance for video hosting service
+        scale: 7 project members
+        role: Member
+        os: Mac
+        phases:
+          - Research
+          - Development
+        tasks:
+          - Frontend development with Nuxt.js
+          - Image editing with Photoshop
+          - Implementation verification of picture-in-picture
+          - UI/UX design research for corporate websites
+        tech: JavaScript, HTML, CSS / SCSS, Photoshop
