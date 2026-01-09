@@ -9,7 +9,7 @@ for table in doc.tables:
     table.autofit = False
     col_count = len(table.columns)
 
-    # ===== 2列テーブル（項目｜内容）=====
+    # ===== 2列テーブル（期間｜業務内容）=====
     if col_count == 2:
         left_width = Inches(1.2)
         right_width = Inches(5.5)

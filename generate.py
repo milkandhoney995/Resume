@@ -48,14 +48,14 @@ lines: List[str] = []
 # =========================
 # Helper
 # =========================
-def bullet_cell(items: Any) -> str:
+def bullet_cell(items: Any, bullet: str) -> str:
     if not items:
         return ""
 
     if isinstance(items, str):
         items = [items]
 
-    return r"\raw{openxml}{<w:br/>}".join(f"・{item}" for item in items)
+    return r"\raw{openxml}{<w:br/>}".join(f"{bullet}{item}" for item in items)
 
 
 # =========================
@@ -89,29 +89,41 @@ lines.append(
 lines.append("## 職務経歴\n\n")
 
 for company in career_list:
-    lines.append(f"### {company.get('company', '')}\n\n")
-
-    if company.get("employment"):
-        lines.append(f"**雇用形態**：{company['employment']}  \n")
-    if company.get("period"):
-        lines.append(f"**在籍期間**：{company['period']}\n\n")
+    lines.append(f"### {company.get('company', '')}(在籍期間: {company.get('period', '')})\n\n")
+    lines.append(f"事業内容：{company.get('industry', '')}　")
+    lines.append(f"資本金：{company.get('capital', '')}　")
+    lines.append(f"売上高：{company.get('revenue', '')} 　")
+    lines.append(f"従業員数：{company.get('employees', '')}  \n\n")
 
     for project in company.get("projects", []):
-        lines.append(f"#### 【案件】{project.get('name', '')}\n\n")
 
-        lines.append("| 項目 | 内容 |\n")
+        lines.append("| 期間 | 業務内容 |\n")
         lines.append("|---|---|\n")
 
         rows = [
-            ("期間", project.get("period")),
-            ("規模", project.get("scale")),
-            ("役割", project.get("role")),
-            ("OS", project.get("os")),
-            ("概要", project.get("summary")),
-            ("担当フェーズ", bullet_cell(project.get("phases"))),
-            ("主な業務", bullet_cell(project.get("tasks"))),
-            ("使用技術", project.get("tech")),
+            (project.get("period"), project.get('department', '')),
+            (" ", project.get('name', '')),
+            (" ", f'**規模**：{project.get("scale")}'),
+            (" ", f'**役割**：{project.get("role")}'),
+            (" ", f'**OS**：{project.get("os")}'),
+            (" ", f'**概要**：{project.get("summary")}'),
+            (" ", "**担当フェーズ**"),
+            (" ", f'{bullet_cell(project.get("phases"), "・")}'),
+            (" ", "**主な業務**"),
+            (" ", f'{bullet_cell(project.get("tasks"), "・")}'),
+            (" ", f'**使用技術**：{project.get("tech")}'),
         ]
+
+        # rows = [
+        #     ("期間", project.get("period")),
+        #     ("規模", project.get("scale")),
+        #     ("役割", project.get("role")),
+        #     ("OS", project.get("os")),
+        #     ("概要", project.get("summary")),
+        #     ("担当フェーズ", bullet_cell(project.get("phases"), "・")),
+        #     ("主な業務", bullet_cell(project.get("tasks"), "・")),
+        #     ("使用技術", project.get("tech")),
+        # ]
 
         for label, value in rows:
             if value:
@@ -183,7 +195,7 @@ for work in works_list:
         ("フロントエンド", work.get("frontend")),
         ("バックエンド", work.get("backend")),
         ("使用ツール", work.get("tools")),
-        ("URL", bullet_cell(work.get("urls"))),
+        ("URL", bullet_cell(work.get("urls"), "・")),
     ]
 
     for label, value in rows:

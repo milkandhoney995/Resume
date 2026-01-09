@@ -1,10 +1,15 @@
 career:
   - company: SCSK Minori ソリューションズ株式会社
+    capital: 4.8億円
+    revenue: 290億円
+    employees: 1,451人
+    industry: 情報・通信業
     employment: 派遣社員
     period: 2024年4月～2025年9月
 
     projects:
-      - name: 新オペレーターアプリケーション／新顧客向けアプリケーション開発
+      - department: ほげほげ事業本部
+        name: 新オペレーターアプリケーション／新顧客向けアプリケーション開発
         period: 2024年4月～2025年9月
         summary: セイコーエプソン株式会社の新オペレーターアプリケーション、新顧客向けアプリケーションの開発案件
         scale: PJ要員20名
@@ -19,21 +24,24 @@ career:
           - 結合テスト
           - 総合テスト
         tasks:
-          - Next.js / TypeScriptでのフロントエンド開発
-          - Material UIでのアプリ開発
+          - Next.js + TypeScript + MUIでのフロントエンド開発
           - Auth0でのバックエンド開発
-          - Playwrightを使用した自動単体テスト・結合テスト
+          - Playwrightを使用した自動テスト作成
           - SQLでのデータベース参照
-          - フロントエンド資料作成・修正
-          - バックエンド資料修正
+          - フロントエンド / バックエンド資料作成
         tech: Next.js, TypeScript, Auth0, MySQL, Playwright
 
   - company: 富士ソフト株式会社
+    capital: 1億円
+    revenue: 3,174億円
+    employees: 19,669人
+    industry: 情報・通信業
     employment: 派遣社員
     period: 2023年4月～2024年3月
 
     projects:
-      - name: 児童見守りサービス「まもるっち」開発
+      - department: ほげほげ事業本部
+        name: 児童見守りサービス「まもるっち」開発
         period: 2023年4月～2024年3月
         summary: 品川区の児童見守りサービス「まもるっち」のWebアプリケーション開発
         scale: PJ要員43名
@@ -43,18 +51,23 @@ career:
           - 実装
           - 単体テスト
         tasks:
-          - Nuxt.jsでの4つのアプリケーションのWebデザイン作成・モック実装
+          - Nuxt.jsでの4つのアプリケーションのWebデザインモック実装
           - Atomic Designに基づくコンポーネント設計
           - Spring BootでのBFF開発
           - JUnitでの単体テスト作成
         tech: Vue3, Nuxt3, HTML, CSS / SCSS, Spring Boot
 
   - company: 株式会社CRI・ミドルウェア
+    capital: 0.78億円
+    revenue: 100億円
+    employees: 300人
+    industry: 情報・通信業
     employment: 正社員
     period: 2021年4月～2023年3月
 
     projects:
-      - name: 他部署向け開発支援
+      - department: 開発支援室
+        name: 他部署向け開発支援
         period: 2022年10月～2023年3月
         summary: 他部署の開発支援業務を担当
         scale: PJ要員10名
@@ -68,10 +81,11 @@ career:
           - 技術記事作成
         tech: Python
 
-      - name: CEDEC2022 Webサイト制作
+      - department: 第4事業部
+        name: CEDEC2022 Webサイト制作
         period: 2022年4月～2022年10月
         summary: ゲーム開発者向けイベントCEDEC2022のWebサイト制作
-        scale: PJ要員10名（5人月）
+        scale: PJ要員10名
         role: メンバー
         os: Mac
         phases:
@@ -82,10 +96,11 @@ career:
           - Laravelでの実装
         tech: JavaScript, Laravel, HTML, CSS / SCSS
 
-      - name: 自社新規サービス立ち上げ
+      - department: 第4事業部
+        name: 自社新規サービス立ち上げ
         period: 2022年1月～2022年4月
         summary: 自社ボイスチャット「CRI TeleXus」開発者向けポータルサイトのフロントエンド開発
-        scale: PJ要員12名（3人月）
+        scale: PJ要員12名
         role: メンバー
         os: Mac
         phases:
@@ -96,10 +111,11 @@ career:
           - デザイナーとのWebデザイン作成
         tech: JavaScript, Vue.js, Laravel, HTML, CSS / SCSS
 
-      - name: 自社サービス向けUIライブラリ作成
+      - department: 第4事業部
+        name: 自社サービス向けUIライブラリ作成
         period: 2021年9月～2022年1月
         summary: Material Designに基づく自社UIライブラリの設計・実装
-        scale: PJ要員3名（2人月）
+        scale: PJ要員3名
         role: メンバー
         os: Mac
         phases:
@@ -108,33 +124,37 @@ career:
           - 実装
           - テスト
         tasks:
-          - UIライブラリのデザイン調査
-          - 要件定義・仕様書作成
-          - UIライブラリの設計・実装・テスト
+          - UIライブラリのデザイン調査、設計、実装、テスト
+          - 要件定義、仕様書作成
         tech: Vue.js, HTML, CSS / SCSS
 
-      - name: オンライン展示会プラットフォーム開発
+      - department: インターネット事業部
+        name: オンライン展示会プラットフォーム開発
         period: 2021年7月～2021年9月
         summary: 自社製品「DXExpo」の機能追加開発
-        scale: PJ要員8名（5人月）
+        scale: PJ要員8名
         role: メンバー
         os: Mac
         phases:
           - 実装
           - 単体テスト
         tasks:
-          - 画面設計
-          - コーディング
-          - テスト
+          - Nuxt.jsによるフロントエンド開発
+          - 手動テスト
           - 自社認証APIによるログイン機能改修
         tech: Vue.js, Nuxt.js, HTML, CSS / SCSS
 
   - company: 株式会社CRI・ミドルウェア
+    capital: 0.78億円
+    revenue: 100億円
+    employees: 300人
+    industry: 情報・通信業
     employment: インターンシップ
     period: 2020年5月～2021年3月
 
     projects:
-      - name: 動画ホスティングサービス「LiveAct Pro」開発補佐
+      - department: インターネット事業部
+        name: 動画ホスティングサービス「LiveAct Pro」開発補佐
         period: 2020年5月～2021年3月
         summary: 動画ホスティングサービスの調査・開発補佐業務
         scale: PJ要員7名
@@ -144,8 +164,8 @@ career:
           - 調査
           - 開発
         tasks:
-          - Nuxt.jsによる実装
+          - Nuxt.jsによるフロントエンド開発
           - Photoshopによる画像編集
-          - ピクチャー・イン・ピクチャーの実装検証
+          - ピクチャーインピクチャーの実装検証
           - 企業WebサイトのUI/UXデザイン調査
         tech: JavaScript, HTML, CSS / SCSS, Photoshop
