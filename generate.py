@@ -203,9 +203,8 @@ if LANGUAGE == "ja":
     lines.append("| タイトル | 内容 |\n")
     lines.append("|---|---|\n")
 else:
-    lines.append("## Personal Projects\n\n")
-    lines.append("| Title | Description |\n")
-    lines.append("|---|---|\n")
+
+    pass
 
 for work in works_list:
 
