@@ -83,17 +83,3 @@ def parse_jd(soup):
         "position": extract_position(text),
         "sections": extract_sections(soup),
     }
-
-
-def extract_skills(text):
-    with open(Path(__file__).parent.parent / "data" / "skill_keywords.yaml") as f:
-        keywords = yaml.safe_load(f)["skills"]
-
-    found = []
-    lower_text = text.lower()
-
-    for k in keywords:
-        if k.lower() in lower_text:
-            found.append(k)
-
-    return found
