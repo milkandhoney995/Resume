@@ -113,13 +113,8 @@ for company in career_list:
         lines.append("| 期間 | 業務内容 |\n")
         lines.append("|---|---|\n")
     else:
-        lines.append(f"Business: {company.get('industry', '')}　")
-        lines.append(f"Capital: {company.get('capital', '')}　")
-        lines.append(f"Revenue: {company.get('revenue', '')} 　")
-        lines.append(f"Employees: {company.get('employees', '')}  \n\n")
 
-        lines.append("| Period | Responsibilities |\n")
-        lines.append("|---|---|\n")
+        pass
 
     for project in company.get("projects", []):
 
