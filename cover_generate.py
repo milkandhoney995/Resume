@@ -1,31 +1,39 @@
 import yaml
 from pathlib import Path
+from datetime import date
 
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
-OUTPUT_MD = BASE_DIR / "cover_letter_en.md"
+INPUT_YAML = DATA_DIR / "cover_en.yaml"
+OUTPUT_MD = BASE_DIR / "cover_letter.md"
 
-with open(DATA_DIR / "cover_en.yaml", encoding="utf-8") as f:
-    data = yaml.safe_load(f)
+def main():
+    with open(INPUT_YAML, encoding="utf-8") as f:
+        cover = yaml.safe_load(f)["cover"]
 
-cover = data["cover"]
+    lines = []
 
-lines = []
+    # Header
+    lines.append(f"# Cover Letter\n\n")
+    lines.append(f"**Position:** {cover['position']}  \n")
+    lines.append(f"**Company:** {cover['company']}\n\n")
 
-# Header
-lines.append(f"{cover.get('position')} Application\n\n")
+    # Body
+    lines.append(f"{cover['opening']}\n\n")
+    lines.append(f"{cover['why_me']}\n\n")
 
-# Body
-lines.append(f"{cover.get('opening')}\n\n")
-lines.append(f"{cover.get('why_me')}\n\n")
+    for exp in cover.get("experience", []):
+        lines.append(f"- {exp}\n\n")
+    lines.append("\n")
 
-for exp in cover.get("experience", []):
-    lines.append(f"{exp}\n\n")
+    lines.append(f"{cover.get('closing')}\n\n")
+    lines.append(
+        f"\nSincerely,\n\nUtano Kurihara\n{date.today():%B %d, %Y}\n"
+    )
 
-lines.append(f"{cover.get('closing')}\n\n")
-lines.append("Sincerely,\n\nUtano Kurihara\n")
+    OUTPUT_MD.write_text("".join(lines), encoding="utf-8")
 
-with open(OUTPUT_MD, "w", encoding="utf-8") as f:
-    f.writelines(lines)
+    print("cover_letter.md generated successfully.")
 
-print("cover_letter_en.md generated.")
+if __name__ == "__main__":
+    main()
