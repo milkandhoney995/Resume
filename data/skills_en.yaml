@@ -1,36 +1,29 @@
 skills:
-  - category: OS
-    items:
-      - name: Mac
-        period: 3 years 0 months
-        level: environment design and construction
-      - name: Windows
-        period: 3 years 5 months
-        level: environment design and construction
-
   - category: Languages
     items:
       - name: HTML
         period: 5 years 5 months
         level: optimal code writing and modification
-      - name: CSS / SCSS
+      - name: CSS/SCSS
         period: 5 years 5 months
         level: optimal code writing and modification
-      - name: JavaScript / TypeScript
+      - name: JavaScript/TypeScript
         period: 5 years 5 months
         level: optimal code writing and modification
 
   - category: Frameworks
     items:
-      - name: Vue.js / Nuxt.js
+      - name: Vue.js/Nuxt.js
         period: 4 years 0 months
         level: optimal code writing and modification
-      - name: React.js / Next.js
+      - name: React.js/Next.js
         period: 2 years 6 months
         level: optimal code writing and modification
 
-  - category: Design
+  - category: Tools
     items:
-      - name: Figma / Adobe XD
-        period: 2 years
-        level: UI/UX design and creation
+      - name: Git, Playwright, Auth0, Figma, Adobe XD
+
+  - category: Databases
+    items:
+      - name: MySQL, PostgreSQL

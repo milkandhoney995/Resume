@@ -153,9 +153,7 @@ for company in career_list:
                     lines.append(f"| {label} | {value} |\n")
 
         else:
-            lines.append(f"**{project.get('role','')}**\n\n")
-            if project.get("summary"):
-                lines.append(f"- {project['summary']}\n")
+            lines.append(f"{project.get('role','')} – {project.get('summary','')}\n\n")
             for task in project.get("tasks", []):
                 lines.append(f"- {task}\n")
             if project.get("tech"):
@@ -264,10 +262,11 @@ else:
 # =========================
 if LANGUAGE == "ja":
     lines.append("## 活かせる経験・知識・技術\n\n")
+    for item in strengths:
+        lines.append(f"- {item}\n")
 else:
-    lines.append("## Applicable Experience, Knowledge, and Skills\n\n")
-for item in strengths:
-    lines.append(f"- {item}\n")
+    pass
+
 lines.append("\n")
 
 
@@ -312,10 +311,6 @@ else:
         lines.append(
             f"{title} – {description}\n\n"
         )
-
-        if urls:
-            for url in urls:
-                lines.append(f"{url}\n")
 
         lines.append("\n")
 

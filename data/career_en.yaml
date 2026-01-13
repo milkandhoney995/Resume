@@ -3,26 +3,25 @@ career:
     period: April 2024 - September 2025
     projects:
       - role: Frontend Engineer
-        summary: Developed operator-facing and customer-facing web applications for Seiko Epson Inc.
+        summary: Operator-facing and customer-facing web applications for Seiko Epson Inc.
         tasks:
-          - Developed frontend features using Next.js and TypeScript
+          - Developed frontend features using Next.js, TypeScript, and MUI
           - Implemented authentication and authorization with Auth0
           - Collaborated with backend engineers and designers
-        tech: Next.js, TypeScript, Auth0, MySQL, Playwright
+          - Created frontend and backend technical documentation
+        tech: Next.js, TypeScript, MUI, Auth0, MySQL, Playwright
 
-  - company: Fujisoft Incorporated
+  - company: FUJI SOFT INCORPORATED
     period: April 2023 - March 2024
     projects:
       - role: Frontend Engineer
-        summary: Developed web applications for Shinagawa Ward's child safety service "Mamolutchi"
+        summary: Web applications for Shinagawa Ward's child safety service "Mamolutchi"
         period: April 2023 - March 2024
         tasks:
-          - Developed Frontend mocks with Nuxt.js from scratch
-          - Implemented component-based design system with Atomic Design principles
-          - Coordinated with backend team
-          - Developed BFF with Spring Boot
-          - Implemented unit testing with JUnit
-        tech: Vue3, Nuxt3, HTML, CSS / SCSS, Spring Boot
+          - Developed and maintained multiple internal and external web services using Vue/Nuxt
+          - Established component architecture based on Atomic Design
+          - Developed BFF APIs using Spring Boot and implemented unit tests with JUnit
+        tech: Vue3, Nuxt3, HTML, CSS/SCSS, Spring Boot
 
   - company: CRI Middleware Co., Ltd.
     period: May 2020 - March 2023
@@ -30,41 +29,9 @@ career:
       - role: Frontend Engineer
         summary: Maintenance and operation of in-house development support tools and QA for voice chat application
         tasks:
-          - Version upgrade support for in-house tools such as GitLab
-          - Creation of automated tests for AtomCraft with Python
-          - QA work for voice chat app
-          - Inventory of development equipment
-          - Creation of technical articles
-        tech: Python
-
-      - role: Frontend Engineer
-        summary: Development of CEDEC2022 website for game developers
-        tasks:
-          - Reafactoring and new feature development with Nuxt.js
-          - Implemented with Laravel for backend
-        tech: JavaScript, Laravel, HTML, CSS / SCSS
-
-      - role: Frontend Engineer
-        name: Developer Portal Site for In-house Voice Chat "CRI TeleXus"
-        tasks:
-          - Frontend development with Nuxt.js
-          - Web design creation with designer
-        tech: JavaScript, Vue.js, Laravel, HTML, CSS / SCSS
-
-      - role: Frontend Engineer
-        summary: Research and development of in-house UI library and feature addition for online exhibition platform "DXExpo"
-        tasks:
-          - Design survey, design, implementation, and testing of UI library
-          - Requirements definition and specification creation
-          - Implemented frontend features with Nuxt.js
-          - Collaborated with backend engineers and designers
-        tech: Vue.js, HTML, CSS / SCSS
-
-      - role: Frontend Engineer
-        summary: Research and development assistance for video hosting service
-        tasks:
-          - Frontend development with Nuxt.js
-          - Image editing with Photoshop
-          - Implementation verification of picture-in-picture
-          - UI/UX design research for corporate websites
-        tech: JavaScript, HTML, CSS / SCSS, Photoshop
+          - Developed and maintained multiple internal and external web services using Vue/Nuxt
+          - Designed and implemented an internal UI library based on Material Design
+          - Supported company-wide development tooling, including GitLab upgrades
+          - Authored technical documentation and internal knowledge articles
+          - Coordinated with backend engineers and designers
+        tech: Vue.js, Nuxt.js, JavaScript, Python, Laravel, HTML, CSS/SCSS
