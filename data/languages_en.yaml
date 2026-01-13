@@ -6,11 +6,11 @@ languages:
       - EIKEN Pre-1st Grade
 
   - name: French
-    proficiency: Reading comprehension only
+    proficiency: Beginner
     details: Studied at university
 
   - name: German
-    proficiency: Reading comprehension only
+    proficiency: Beginner
     details: Duolingo 50
 
   - name: Danish
