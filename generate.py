@@ -154,20 +154,22 @@ if LANGUAGE == "ja":
     lines.append("## テクニカルスキル\n\n")
     lines.append("| カテゴリ | スキル | 使用期間 | レベル |\n")
     lines.append("|---|---|---|---|\n")
+
+    for block in skills_list:
+        for i, item in enumerate(block.get("items", [])):
+            category = block.get("category", "") if i == 0 else ""
+            lines.append(
+                f"| {category} | "
+                f"{item.get('name','')} | "
+                f"{item.get('period','')} | "
+                f"{item.get('level','')} |\n"
+            )
 else:
     lines.append("## Technical Skills\n\n")
-    lines.append("| Category | Skill | Experience | Level |\n")
-    lines.append("|---|---|---|---|\n")
-
-for block in skills_list:
-    for i, item in enumerate(block.get("items", [])):
-        category = block.get("category", "") if i == 0 else ""
-        lines.append(
-            f"| {category} | "
-            f"{item.get('name','')} | "
-            f"{item.get('period','')} | "
-            f"{item.get('level','')} |\n"
-        )
+    for block in skills_list:
+        lines.append(f"**{block.get('category','')}**\n\n")
+        for item in block.get("items", []):
+            lines.append(f"- {item.get('name')}\n\n")
 
 lines.append("\n")
 
