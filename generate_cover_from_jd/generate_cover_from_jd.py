@@ -1,18 +1,30 @@
 import sys
 import requests
+from pathlib import Path
 from bs4 import BeautifulSoup
-from jd_parser import parse_jd
-from jd_matcher import build_cover_yaml
+from jd_parser import fetch_jd_html, parse_jd
+from jd_matcher import build_llm_input
+from llm_cover_generator import generate_cover_yaml
 
-url = sys.argv[1]
+BASE_DIR = Path(__file__).resolve().parent.parent
+OUTPUT = BASE_DIR / "data" / "cover_en.yaml"
 
-html = requests.get(url, timeout=10).text
-soup = BeautifulSoup(html, "html.parser")
+def main():
+    if len(sys.argv) < 2:
+        print("Usage: python generate_cover_from_jd.py <JOB_URL>")
+        sys.exit(1)
 
-jd_data = parse_jd(soup)
-cover_yaml = build_cover_yaml(jd_data)
+    url = sys.argv[1]
 
-with open("data/cover_en.yaml", "w", encoding="utf-8") as f:
-    f.write(cover_yaml)
+    soup = fetch_jd_html(url)
+    jd = parse_jd(soup)
+    llm_input = build_llm_input(jd)
 
-print("cover_en.yaml generated from job description.")
+    cover_yaml = generate_cover_yaml(llm_input)
+
+    OUTPUT.write_text(cover_yaml, encoding="utf-8")
+    print("✅ cover_en.yaml generated successfully.")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,46 +1,88 @@
 import re
+import requests
+from bs4 import BeautifulSoup
 import yaml
 from pathlib import Path
 
+SECTION_HEADERS = {
+    "summary": [
+        "about the role", "job description", "overview"
+    ],
+    "responsibilities": [
+        "responsibilities", "what you will do", "your role"
+    ],
+    "requirements": [
+        "requirements", "qualifications", "what you bring", "must have"
+    ],
+    "preferred": [
+        "preferred", "nice to have", "bonus", "plus"
+    ],
+    "tech_stack": [
+        "tech stack", "technologies", "tools"
+    ],
+    "culture": [
+        "culture", "values", "why join", "working at"
+    ],
+}
+
+def fetch_jd_html(url: str) -> BeautifulSoup:
+    res = requests.get(url, timeout=10)
+    res.raise_for_status()
+    return BeautifulSoup(res.text, "html.parser")
+
+def normalize(text: str) -> str:
+    return re.sub(r"\s+", " ", text.lower()).strip()
+
+def soup_to_lines(soup):
+    lines = []
+
+    for tag in soup.find_all(["h1", "h2", "h3", "li", "p"]):
+        text = tag.get_text(strip=True)
+        if len(text.split()) >= 3:
+            lines.append(text)
+
+    return lines
+
+def extract_sections(soup):
+    lines = soup_to_lines(soup)
+    sections = {k: [] for k in SECTION_HEADERS}
+    current = None
+
+    for line in lines:
+        n = normalize(line)
+
+        for section, headers in SECTION_HEADERS.items():
+            if any(h in n for h in headers):
+                current = section
+                break
+        else:
+            if current:
+                sections[current].append(line)
+
+    return sections
+
+def extract_company(text: str) -> str:
+    match = re.search(r"at\s+([A-Z][A-Za-z0-9 &]+)", text)
+    return match.group(1) if match else "Target Company"
+
+def extract_position(text: str) -> str:
+    for title in [
+        "Frontend Engineer",
+        "Senior Frontend Engineer",
+        "Software Engineer",
+        "Web Engineer",
+    ]:
+        if title.lower() in text.lower():
+            return title
+    return "Frontend Engineer"
+
 def parse_jd(soup):
     text = soup.get_text(separator="\n")
-
     return {
         "company": extract_company(text),
         "position": extract_position(text),
-        "skills": extract_skills(text),
-        "sections": extract_sections(text),
+        "sections": extract_sections(soup),
     }
-
-
-def extract_company(text):
-    patterns = [
-        r"at\s+([A-Z][A-Za-z0-9 &]+)",
-        r"join\s+([A-Z][A-Za-z0-9 &]+)",
-        r"About\s+([A-Z][A-Za-z0-9 &]+)",
-    ]
-
-    for p in patterns:
-        match = re.search(p, text)
-        if match:
-            return match.group(1)
-
-    return "Target Company"
-
-
-def extract_position(text):
-    title_candidates = [
-        "Frontend Engineer",
-        "Software Engineer",
-        "Senior Frontend Engineer",
-        "Web Engineer",
-    ]
-
-    for title in title_candidates:
-        if title.lower() in text.lower():
-            return title
-
-    return "Frontend Engineer"
 
 
 def extract_skills(text):
@@ -55,26 +97,3 @@ def extract_skills(text):
             found.append(k)
 
     return found
-
-def extract_sections(text):
-    sections = {
-        "responsibilities": [],
-        "requirements": [],
-    }
-
-    current = None
-
-    for line in text.splitlines():
-        l = line.lower().strip()
-
-        if "responsibilit" in l:
-            current = "responsibilities"
-            continue
-        if "requirement" in l or "qualification" in l:
-            current = "requirements"
-            continue
-
-        if current and line.strip():
-            sections[current].append(line.strip())
-
-    return sections
