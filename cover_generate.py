@@ -28,7 +28,7 @@ def main():
 
     lines.append(f"{cover.get('closing')}\n\n")
     lines.append(
-        f"\nSincerely,\n\nUtano Kurihara\n{date.today():%B %d, %Y}\n"
+        f"\n\nSincerely,\n\nUtano Kurihara\n\n{date.today():%B %d, %Y}\n"
     )
 
     OUTPUT_MD.write_text("".join(lines), encoding="utf-8")
