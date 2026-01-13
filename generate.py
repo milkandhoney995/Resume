@@ -121,15 +121,15 @@ for company in career_list:
 
             rows = [
                 (project.get("period"), project.get('department', '')),
-                (" ", f'**概要**：{project.get("summary")}' if LANGUAGE == "ja" else f'**Overview**: {project.get("summary")}'),
-                (" ", f'**規模**：{project.get("scale")}' if LANGUAGE == "ja" else f'**Scale**: {project.get("scale")}'),
-                (" ", f'**役割**：{project.get("role")}' if LANGUAGE == "ja" else f'**Role**: {project.get("role")}'),
-                (" ", f'**OS**：{project.get("os")}' if LANGUAGE == "ja" else f'**OS**: {project.get("os")}'),
-                (" ", "**担当フェーズ**" if LANGUAGE == "ja" else "**Phases**"),
+                (" ", f'**概要**：{project.get("summary")}'),
+                (" ", f'**規模**：{project.get("scale")}'),
+                (" ", f'**役割**：{project.get("role")}'),
+                (" ", f'**OS**：{project.get("os")}'),
+                (" ", "**担当フェーズ**"),
                 (" ", f'{bullet_cell(project.get("phases"), "・")}'),
-                (" ", "**主な業務**" if LANGUAGE == "ja" else "**Main Tasks**"),
+                (" ", "**主な業務**"),
                 (" ", f'{bullet_cell(project.get("tasks"), "・")}'),
-                (" ", f'**使用技術**：{project.get("tech")}' if LANGUAGE == "ja" else f'**Technologies**: {project.get("tech")}'),
+                (" ", f'**使用技術**：{project.get("tech")}'),
             ]
 
             for label, value in rows:
