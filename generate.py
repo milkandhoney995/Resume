@@ -166,10 +166,24 @@ if LANGUAGE == "ja":
             )
 else:
     lines.append("## Technical Skills\n\n")
+
     for block in skills_list:
-        lines.append(f"**{block.get('category','')}**\n\n")
-        for item in block.get("items", []):
-            lines.append(f"- {item.get('name')}\n\n")
+        category = block.get("category", "")
+        items = block.get("items", [])
+
+        if not category or not items:
+            continue
+
+        skill_names = [
+            item.get("name", "")
+            for item in items
+            if item.get("name")
+        ]
+
+        if skill_names:
+            lines.append(
+                f"{category}: {', '.join(skill_names)}\n\n"
+            )
 
 lines.append("\n")
 
