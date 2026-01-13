@@ -1,18 +1,13 @@
 languages:
   - name: English
     proficiency: Advanced
-    details:
-      - TOEIC 755
-      - EIKEN Pre-1st Grade
+    details: TOEIC 755, EIKEN Pre-1st Grade
 
   - name: French
     proficiency: Beginner
-    details: Studied at university
 
   - name: German
     proficiency: Beginner
-    details: Duolingo 50
 
   - name: Danish
     proficiency: Beginner
-    details: Duolingo 19

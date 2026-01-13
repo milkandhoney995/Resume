@@ -195,20 +195,53 @@ if LANGUAGE == "ja":
     lines.append("## 語学\n\n")
     lines.append("| 言語 | 習熟度 | 資格 / 補足 |\n")
     lines.append("|---|---|---|\n")
+
+    for lang in languages:
+        lines.append(
+            f"| {lang.get('name','')} | "
+            f"{lang.get('proficiency','')} | "
+            f"{lang.get('details','')} |\n"
+        )
+
+    lines.append("\n")
+
 else:
     lines.append("## Languages\n\n")
-    lines.append("| Language | Proficiency | Qualifications / Notes |\n")
-    lines.append("|---|---|---|\n")
 
-for lang in languages:
-    lines.append(
-        f"| {lang.get('name','')} | "
-        f"{lang.get('proficiency','')} | "
-        f"{lang.get('details','')} |\n"
-    )
+    # proficiency ごとに言語をまとめる
+    grouped = {}
 
-lines.append("\n")
+    for lang in languages:
+        name = lang.get("name")
+        proficiency = lang.get("proficiency")
+        details = lang.get("details")
 
+        if not name or not proficiency:
+            continue
+
+        grouped.setdefault(proficiency, []).append({
+            "name": name,
+            "details": details
+        })
+
+    for proficiency, items in grouped.items():
+        names = [item["name"] for item in items]
+
+        # 資格は1つだけ付ける（通常は English）
+        details_list = [
+            item["details"]
+            for item in items
+            if item.get("details")
+        ]
+
+        line = f"{' / '.join(names)}: {proficiency}"
+
+        if details_list:
+            line += f" ({', '.join(details_list)})"
+
+        lines.append(f"{line}\n\n")
+
+    lines.append("\n")
 
 # =========================
 # 活かせる経験・知識・技術
@@ -229,29 +262,46 @@ if LANGUAGE == "ja":
     lines.append("## 業務外での開発\n\n")
     lines.append("| タイトル | 内容 |\n")
     lines.append("|---|---|\n")
+
+    for work in works_list:
+
+        lines.append(f"| {work.get('title','')} | **概要**：{work.get('description','')} |\n" if LANGUAGE == "ja" else f"| {work.get('title','')} | **Overview**: {work.get('description','')} |\n")
+
+        if work.get('period'):
+            lines.append(f"|  | **制作期間**：{work.get('period')} |\n" if LANGUAGE == "ja" else f"|  | **Development Period**: {work.get('period')} |\n")
+
+        if work.get('frontend'):
+            lines.append(f"|  | **フロントエンド**：{work.get('frontend')} |\n" if LANGUAGE == "ja" else f"|  | **Frontend**: {work.get('frontend')} |\n")
+
+        if work.get('backend') and work.get('backend') != []:
+            lines.append(f"|  | **バックエンド**：{work.get('backend')} |\n" if LANGUAGE == "ja" else f"|  | **Backend**: {work.get('backend')} |\n")
+
+        if work.get('tools') and work.get('tools') != []:
+            lines.append(f"|  | **使用ツール**：{work.get('tools')} |\n" if LANGUAGE == "ja" else f"|  | **Tools Used**: {work.get('tools')} |\n")
+
+        if work.get('urls') and work.get('urls') != []:
+            lines.append(f"|  | **URL**：{bullet_cell(work.get('urls'), '・')} |\n" if LANGUAGE == "ja" else f"|  | **URL**: {bullet_cell(work.get('urls'), '・')} |\n")
+
 else:
+    lines.append("## Personal Projects\n\n")
 
-    pass
+    for work in works_list:
+        title = work.get("title", "")
+        description = work.get("description", "")
+        urls = work.get("urls", [])
 
-for work in works_list:
+        if not title or not description:
+            continue
 
-    lines.append(f"| {work.get('title','')} | **概要**：{work.get('description','')} |\n" if LANGUAGE == "ja" else f"| {work.get('title','')} | **Overview**: {work.get('description','')} |\n")
+        lines.append(
+            f"{title} – {description}\n\n"
+        )
 
-    if work.get('period'):
-        lines.append(f"|  | **制作期間**：{work.get('period')} |\n" if LANGUAGE == "ja" else f"|  | **Development Period**: {work.get('period')} |\n")
+        if urls:
+            for url in urls:
+                lines.append(f"{url}\n")
 
-    if work.get('frontend'):
-        lines.append(f"|  | **フロントエンド**：{work.get('frontend')} |\n" if LANGUAGE == "ja" else f"|  | **Frontend**: {work.get('frontend')} |\n")
-
-    if work.get('backend') and work.get('backend') != []:
-        lines.append(f"|  | **バックエンド**：{work.get('backend')} |\n" if LANGUAGE == "ja" else f"|  | **Backend**: {work.get('backend')} |\n")
-
-    if work.get('tools') and work.get('tools') != []:
-        lines.append(f"|  | **使用ツール**：{work.get('tools')} |\n" if LANGUAGE == "ja" else f"|  | **Tools Used**: {work.get('tools')} |\n")
-
-    if work.get('urls') and work.get('urls') != []:
-        lines.append(f"|  | **URL**：{bullet_cell(work.get('urls'), '・')} |\n" if LANGUAGE == "ja" else f"|  | **URL**: {bullet_cell(work.get('urls'), '・')} |\n")
-
+        lines.append("\n")
 
 # =========================
 # 自己PR
