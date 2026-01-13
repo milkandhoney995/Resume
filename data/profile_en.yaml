@@ -1,7 +1,9 @@
 profile:
-  title: Curriculum Vitae
   name: Utano Kurihara
-  date: auto
+  headline: Frontend Engineer | React / Vue / Next.js | UI/UX-focused
+  email: harada.g17@gmail.com
+  github: https://github.com/milkandhoney995
+  portfolio: https://my-portofolio-ten-red.vercel.app/en
   summary: >
     Frontend engineer with 5+ years of experience building scalable web applications using React, Vue, and Next.js. Experienced across the full development lifecycle, from UI/UX design to implementation and testing.
     Strong background in enterprise and public-sector systems, with hands-on experience in authentication, BFF development, and design systems.

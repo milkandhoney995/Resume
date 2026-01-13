@@ -66,22 +66,38 @@ def bullet_cell(items: Any, bullet: str) -> str:
 
 
 # =========================
-# タイトル
+# ヘッダー
 # =========================
-lines.append(f"# {profile.get('title', '職務経歴書' if LANGUAGE == 'ja' else 'Curriculum Vitae')}\n\n")
+if LANGUAGE == "ja":
+    lines.append(f"# {profile.get('title', '職務経歴書')}\n\n")
 
-if profile.get("date") == "auto":
-    if LANGUAGE == "ja":
+    if profile.get("date") == "auto":
         today = date.today().strftime("%Y年%-m月%-d日現在")
-    else:
-        today = date.today().strftime("As of %B %-d, %Y")
-    lines.append(f"{today}\n\n")
+        lines.append(f"{today}\n\n")
 
-if profile.get("name"):
-    if LANGUAGE == "ja":
+    if profile.get("name"):
         lines.append(f"氏名　{profile['name']}\n\n")
-    else:
-        lines.append(f"Name: {profile['name']}\n\n")
+
+else:
+    # Name
+    if profile.get("name"):
+        lines.append(f"# {profile['name']}\n")
+
+    # Headline
+    if profile.get("headline"):
+        lines.append(f"{profile['headline']}\n\n")
+
+    # Contact info
+    if profile.get("email"):
+        lines.append(f"Email: {profile['email']}\n\n")
+
+    if profile.get("github"):
+        lines.append(f"GitHub: {profile['github']}\n\n")
+
+    if profile.get("portfolio"):
+        lines.append(f"Portfolio: {profile['portfolio']}\n")
+
+    lines.append("\n")
 
 
 # =========================
@@ -308,12 +324,11 @@ else:
 # =========================
 if LANGUAGE == "ja":
     lines.append("## 自己PR\n\n")
+    for section in self_pr["about_me"]:
+        body = section.get('body', '').replace('\n', '  \n')
+        lines.append(f"{body}\n\n")
 else:
-    lines.append("## Self-Promotion\n\n")
-
-for section in self_pr["about_me"]:
-    body = section.get('body', '').replace('\n', '  \n')
-    lines.append(f"{body}\n\n")
+    pass
 
 
 # =========================
