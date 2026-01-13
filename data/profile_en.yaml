@@ -2,8 +2,6 @@ profile:
   title: Curriculum Vitae
   name: Utano Kurihara
   date: auto
-  summary: |
-    Started working as a frontend engineer at CRI Middleware Co., Ltd. during university studies. After graduation, joined the company as a full-time employee and worked on in-house product development for approximately 3 years.
-    Subsequently worked on municipal system development at Fujisoft Inc., and Seiko Epson-related system development at SCSK Minori Solutions, Inc.
-    As a frontend engineer, engaged in design and implementation of web applications mainly using React/Vue/Next.js.
-    Capable of handling the entire process from UI/UX design to implementation and testing. Continuously conducts personal development outside of work to improve technical skills. Also studying multiple languages including English, possessing international communication abilities.
+  summary: >
+    Frontend engineer with 5+ years of experience building scalable web applications using React, Vue, and Next.js. Experienced across the full development lifecycle, from UI/UX design to implementation and testing.
+    Strong background in enterprise and public-sector systems, with hands-on experience in authentication, BFF development, and design systems.
